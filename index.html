@@ -1,1 +1,1388 @@
-<!-- placeholder -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Edisto Stays – Edisto Island Vacation Rentals & Property Management | Basecamp Getaways</title>
+  <meta name="description" content="Edisto Island's premier vacation rental experience. Smart locks, fully-stocked homes, AI-powered pricing, and boutique property management by Basecamp Getaways. Explore restaurants, fishing charters, kayaking, and more. Own a property? Get your free revenue estimate."/>
+  <meta name="keywords" content="Edisto Island vacation rentals, Edisto Beach property management, Edisto stays, Edisto Island things to do, Edisto restaurants, Edisto fishing charters, Botany Bay, Basecamp Getaways"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+
+  <style>
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    :root{
+      --navy:#18323f;
+      --navy-lt:#1f3d4d;
+      --teal:#297a89;
+      --teal-lt:#3595a6;
+      --sand:#f3ede0;
+      --sand-lt:#faf7f1;
+      --cream:#faf8f4;
+      --gold:#c2944a;
+      --gold-lt:#d4ab68;
+      --coral:#cd6348;
+      --dark:#1c2b32;
+      --mid:#4d6370;
+      --light:#8aa2ae;
+      --white:#ffffff;
+      --ff-head:'Cormorant Garamond',Georgia,serif;
+      --ff-body:'DM Sans',system-ui,sans-serif;
+      --r:6px;
+      --sh:0 4px 28px rgba(24,50,63,.13);
+      --sh-lg:0 14px 56px rgba(24,50,63,.2);
+    }
+    html{scroll-behavior:smooth}
+    body{font-family:var(--ff-body);color:var(--dark);background:var(--cream);line-height:1.65;overflow-x:hidden}
+    img{display:block;max-width:100%}
+    a{color:inherit;text-decoration:none}
+    .container{max-width:1200px;margin:0 auto;padding:0 28px}
+    .section{padding:100px 0}
+    .section-md{padding:72px 0}
+    .eyebrow{display:block;font-family:var(--ff-body);font-size:.75rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--teal);margin-bottom:14px}
+    .eyebrow-gold{color:var(--gold)}
+    .eyebrow-light{color:rgba(255,255,255,.5)}
+    h1,h2,h3,h4{font-family:var(--ff-head);font-weight:400;line-height:1.16}
+    h1{font-size:clamp(2.8rem,6.5vw,5.6rem)}
+    h2{font-size:clamp(2rem,3.8vw,3.2rem)}
+    h3{font-size:clamp(1.4rem,2.5vw,1.9rem)}
+    h4{font-size:1.2rem;font-family:var(--ff-body);font-weight:600}
+    p{color:var(--mid);font-size:1rem;line-height:1.72}
+
+    .btn{display:inline-flex;align-items:center;gap:8px;padding:13px 30px;border-radius:var(--r);font-family:var(--ff-body);font-size:.88rem;font-weight:600;letter-spacing:.04em;cursor:pointer;border:none;transition:all .22s ease;text-decoration:none}
+    .btn-teal{background:var(--teal);color:#fff}
+    .btn-teal:hover{background:#1f6575;transform:translateY(-1px);box-shadow:var(--sh)}
+    .btn-gold{background:var(--gold);color:#fff}
+    .btn-gold:hover{background:#a67a35;transform:translateY(-1px);box-shadow:var(--sh)}
+    .btn-ghost{background:transparent;color:#fff;border:1.5px solid rgba(255,255,255,.65)}
+    .btn-ghost:hover{background:rgba(255,255,255,.1);border-color:#fff}
+    .btn-outline{background:transparent;color:var(--teal);border:1.5px solid var(--teal)}
+    .btn-outline:hover{background:var(--teal);color:#fff}
+    .btn-sm{padding:9px 20px;font-size:.82rem}
+    .btn-lg{padding:16px 38px;font-size:.95rem}
+
+    /* ── NAV ── */
+    nav{position:fixed;top:0;left:0;right:0;z-index:200;padding:0 28px;transition:all .3s}
+    nav.scrolled{background:rgba(24,50,63,.97);backdrop-filter:blur(12px);box-shadow:0 2px 24px rgba(0,0,0,.18)}
+    .nav-inner{max-width:1200px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;height:70px}
+    .logo{display:flex;flex-direction:column}
+    .logo-main{font-family:var(--ff-head);font-size:1.55rem;font-weight:600;color:#fff;letter-spacing:.02em;line-height:1}
+    .logo-sub{font-size:.6rem;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.5);margin-top:3px}
+    .nav-links{display:flex;align-items:center;gap:28px;list-style:none}
+    .nav-links>li{position:relative}
+    .nav-links a{color:rgba(255,255,255,.82);font-size:.86rem;font-weight:500;transition:color .18s;white-space:nowrap}
+    .nav-links a:hover{color:#fff}
+    .nav-cta{background:var(--gold);color:#fff!important;padding:9px 22px;border-radius:var(--r);font-weight:600!important}
+    .nav-cta:hover{background:#a67a35!important}
+    .burger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:4px}
+    .burger span{display:block;width:22px;height:2px;background:#fff;border-radius:2px;transition:.3s}
+
+    /* dropdown */
+    .has-drop:hover .drop{opacity:1;pointer-events:all;transform:translateY(0)}
+    .drop{position:absolute;top:calc(100% + 12px);left:50%;transform:translateX(-50%) translateY(8px);background:var(--navy);border-radius:8px;padding:12px 0;min-width:210px;box-shadow:var(--sh-lg);opacity:0;pointer-events:none;transition:all .22s ease}
+    .drop a{display:block;padding:9px 20px;font-size:.86rem;color:rgba(255,255,255,.8)!important;transition:background .15s}
+    .drop a:hover{background:rgba(255,255,255,.08);color:#fff!important}
+
+    /* mobile nav */
+    .mobile-nav{position:fixed;inset:0;background:var(--navy);z-index:300;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:28px;opacity:0;pointer-events:none;transition:opacity .3s}
+    .mobile-nav.open{opacity:1;pointer-events:all}
+    .mobile-nav a{color:#fff;font-family:var(--ff-head);font-size:1.9rem;font-weight:300}
+    .mobile-close{position:absolute;top:22px;right:26px;font-size:1.8rem;color:#fff;cursor:pointer}
+
+    /* ── HERO ── */
+    .hero{position:relative;height:100vh;min-height:700px;display:flex;align-items:center;justify-content:center;overflow:hidden}
+    .hero-bg{position:absolute;inset:0}
+    .slide{position:absolute;inset:0;background-size:cover;background-position:center;opacity:0;transition:opacity 1.5s ease}
+    .slide.on{opacity:1}
+    .slide::after{content:'';position:absolute;inset:0;background:linear-gradient(160deg,rgba(18,44,55,.35) 0%,rgba(18,44,55,.62) 60%,rgba(18,44,55,.78) 100%)}
+    .hero-body{position:relative;z-index:2;text-align:center;max-width:860px;padding:0 24px}
+    .hero-tag{font-size:.76rem;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);margin-bottom:18px;display:block}
+    .hero h1{color:#fff;margin-bottom:20px;font-weight:300;font-style:italic}
+    .hero h1 strong{font-style:normal;font-weight:700}
+    .hero-lead{font-size:1.15rem;color:rgba(255,255,255,.88);max-width:600px;margin:0 auto 38px;font-weight:300;line-height:1.65}
+    .hero-actions{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+    .hero-scroll-cue{position:absolute;bottom:32px;left:50%;transform:translateX(-50%);z-index:2;display:flex;flex-direction:column;align-items:center;gap:6px}
+    .hero-scroll-cue span{font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.5)}
+    .hero-line{width:1px;height:42px;background:linear-gradient(to bottom,rgba(255,255,255,.5),transparent);animation:pulse 2s ease-in-out infinite}
+    @keyframes pulse{0%,100%{opacity:1}50%{opacity:.25}}
+
+    /* slide dots */
+    .hero-dots{position:absolute;bottom:72px;left:50%;transform:translateX(-50%);z-index:2;display:flex;gap:8px}
+    .dot{width:6px;height:6px;border-radius:50%;background:rgba(255,255,255,.35);cursor:pointer;transition:background .2s,width .2s;border:none}
+    .dot.on{width:22px;border-radius:3px;background:#fff}
+
+    /* ── STRIP ── */
+    .strip{background:var(--navy);padding:28px 0}
+    .strip-inner{display:flex;gap:0;align-items:stretch;flex-wrap:wrap}
+    .strip-stat{flex:1;min-width:150px;text-align:center;padding:12px 24px;border-right:1px solid rgba(255,255,255,.1)}
+    .strip-stat:last-child{border-right:none}
+    .strip-num{font-family:var(--ff-head);font-size:2.4rem;font-weight:600;color:var(--gold);display:block;line-height:1}
+    .strip-lbl{font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.5);margin-top:4px;display:block}
+
+    /* ── ABOUT ── */
+    .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
+    .about-imgs{position:relative;padding-bottom:40px}
+    .about-img-main{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:4px;box-shadow:var(--sh-lg)}
+    .about-img-float{position:absolute;bottom:0;right:-28px;width:55%;aspect-ratio:5/4;object-fit:cover;border-radius:4px;border:5px solid var(--cream);box-shadow:var(--sh-lg)}
+    .about-copy h2{color:var(--navy);margin-bottom:20px}
+    .about-copy p{margin-bottom:16px}
+    .about-pills{display:flex;flex-direction:column;gap:12px;margin:28px 0}
+    .pill{display:flex;align-items:flex-start;gap:14px}
+    .pill-icon{width:38px;height:38px;border-radius:50%;background:rgba(41,122,137,.12);display:flex;align-items:center;justify-content:center;font-size:1.1rem;flex-shrink:0;margin-top:2px}
+    .pill p{margin:0;font-size:.94rem}
+
+    /* ── DEST GRID ── */
+    .dest-wrap{background:var(--navy)}
+    .dest-head{text-align:center;padding:80px 0 56px}
+    .dest-head h2{color:#fff;margin-bottom:12px}
+    .dest-head p{color:rgba(255,255,255,.6);max-width:540px;margin:0 auto}
+    .dest-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:3px}
+    .dcard{position:relative;overflow:hidden;cursor:pointer}
+    .dcard-img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .7s ease}
+    .dcard:hover .dcard-img{transform:scale(1.07)}
+    .dcard-img-wrap{aspect-ratio:4/3;overflow:hidden}
+    .dcard.tall .dcard-img-wrap{aspect-ratio:4/5}
+    .dcard.wide{grid-column:span 2}
+    .dcard.wide .dcard-img-wrap{aspect-ratio:16/7}
+    .dcard-ov{position:absolute;inset:0;background:linear-gradient(to top,rgba(18,44,55,.9) 0%,transparent 55%);display:flex;flex-direction:column;justify-content:flex-end;padding:24px;transition:background .3s}
+    .dcard:hover .dcard-ov{background:linear-gradient(to top,rgba(18,44,55,.96) 0%,rgba(18,44,55,.25) 60%)}
+    .dcard-title{font-family:var(--ff-head);font-size:1.5rem;color:#fff;line-height:1.2}
+    .dcard.wide .dcard-title{font-size:2rem}
+    .dcard-sub{font-size:.8rem;color:rgba(255,255,255,.68);margin-top:4px}
+
+    /* ── ISLAND GUIDE TABS ── */
+    .guide-wrap{background:var(--sand)}
+    .guide-tabs{display:flex;gap:0;border-bottom:2px solid rgba(41,122,137,.15);margin-bottom:56px;overflow-x:auto}
+    .gtab{padding:14px 28px;font-family:var(--ff-body);font-size:.88rem;font-weight:600;color:var(--mid);cursor:pointer;border:none;background:none;border-bottom:2px solid transparent;margin-bottom:-2px;white-space:nowrap;transition:all .2s;letter-spacing:.03em}
+    .gtab.active{color:var(--teal);border-bottom-color:var(--teal)}
+    .gtab:hover{color:var(--teal)}
+    .gpanel{display:none}
+    .gpanel.active{display:block}
+
+    /* dining grid */
+    .dining-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+    .rest-card{background:#fff;border-radius:8px;overflow:hidden;box-shadow:0 2px 16px rgba(18,44,55,.07);transition:transform .22s,box-shadow .22s}
+    .rest-card:hover{transform:translateY(-4px);box-shadow:var(--sh)}
+    .rest-img{width:100%;aspect-ratio:16/9;object-fit:cover}
+    .rest-body{padding:22px}
+    .rest-tag{font-size:.7rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--teal);margin-bottom:6px;display:block}
+    .rest-card h4{color:var(--navy);margin-bottom:6px;font-size:1.05rem}
+    .rest-card p{font-size:.87rem;margin-bottom:14px}
+    .rest-link{font-size:.82rem;font-weight:600;color:var(--teal);display:inline-flex;align-items:center;gap:4px}
+    .rest-link:hover{color:var(--navy)}
+
+    /* activity grid */
+    .act-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+    .act-card{background:#fff;border-radius:8px;padding:24px 26px;display:flex;gap:18px;align-items:flex-start;box-shadow:0 2px 16px rgba(18,44,55,.07);transition:transform .22s,box-shadow .22s}
+    .act-card:hover{transform:translateY(-3px);box-shadow:var(--sh)}
+    .act-icon{font-size:1.8rem;flex-shrink:0;line-height:1;margin-top:2px}
+    .act-card h4{color:var(--navy);margin-bottom:4px;font-size:1rem}
+    .act-card p{font-size:.86rem;margin-bottom:8px}
+    .act-links{display:flex;flex-wrap:wrap;gap:6px}
+    .act-link{font-size:.76rem;font-weight:600;color:var(--teal);background:rgba(41,122,137,.08);padding:3px 10px;border-radius:20px;transition:background .18s}
+    .act-link:hover{background:rgba(41,122,137,.18)}
+
+    /* nature grid */
+    .nature-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px}
+    .nat-card{border-radius:8px;overflow:hidden;position:relative;box-shadow:var(--sh)}
+    .nat-img{width:100%;aspect-ratio:16/9;object-fit:cover}
+    .nat-body{padding:24px;background:#fff}
+    .nat-badge{display:inline-block;font-size:.7rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--gold);margin-bottom:6px}
+    .nat-card h4{color:var(--navy);margin-bottom:6px;font-size:1.05rem}
+    .nat-card p{font-size:.87rem;margin-bottom:12px}
+    .nat-card a{font-size:.82rem;font-weight:600;color:var(--teal)}
+
+    /* ── MANAGEMENT PROBLEM ── */
+    .problem{background:var(--navy);color:#fff}
+    .problem-inner{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start}
+    .problem-copy h2{color:#fff;margin-bottom:20px}
+    .problem-copy .lede{font-size:1.1rem;color:rgba(255,255,255,.85);margin-bottom:20px;font-weight:300;line-height:1.7}
+    .problem-copy p{color:rgba(255,255,255,.65);margin-bottom:16px;font-size:.97rem}
+    .problem-copy blockquote{border-left:3px solid var(--gold);padding:16px 20px;margin:28px 0;background:rgba(255,255,255,.05);border-radius:0 6px 6px 0;font-style:italic;color:rgba(255,255,255,.82);font-size:.97rem;line-height:1.7}
+    .comp-table{background:rgba(255,255,255,.06);border-radius:10px;overflow:hidden;border:1px solid rgba(255,255,255,.1)}
+    .comp-table table{width:100%;border-collapse:collapse}
+    .comp-table th{padding:13px 16px;text-align:left;font-family:var(--ff-body);font-size:.74rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.45);border-bottom:1px solid rgba(255,255,255,.08)}
+    .comp-table td{padding:12px 16px;font-size:.87rem;color:rgba(255,255,255,.75);border-bottom:1px solid rgba(255,255,255,.06)}
+    .comp-table tr:last-child td{border-bottom:none}
+    .comp-table tr.us td{color:#fff;background:rgba(41,122,137,.18)}
+    .comp-table tr.us td:first-child{font-weight:600;color:var(--gold)}
+    .tag-bad{display:inline-block;background:rgba(205,99,72,.2);color:#e08a72;font-size:.72rem;font-weight:600;padding:2px 8px;border-radius:3px}
+    .tag-ok{display:inline-block;background:rgba(194,148,74,.15);color:var(--gold-lt);font-size:.72rem;font-weight:600;padding:2px 8px;border-radius:3px}
+    .tag-good{display:inline-block;background:rgba(41,122,137,.25);color:#6fcfe0;font-size:.72rem;font-weight:600;padding:2px 8px;border-radius:3px}
+    .fee-math{background:rgba(41,122,137,.12);border:1px solid rgba(41,122,137,.3);border-radius:8px;padding:24px;margin-top:28px}
+    .fee-math h4{color:#fff;margin-bottom:12px;font-size:1.05rem}
+    .fee-math p{color:rgba(255,255,255,.7);font-size:.9rem;margin-bottom:8px}
+    .fee-math p:last-child{margin:0}
+    .fee-math strong{color:var(--gold)}
+
+    /* ── WHY US ── */
+    .why{background:var(--cream)}
+    .why-head{text-align:center;margin-bottom:64px}
+    .why-head h2{color:var(--navy)}
+    .why-head p{max-width:580px;margin:14px auto 0}
+    .why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+    .why-card{background:#fff;border-radius:8px;padding:36px 28px;border-top:3px solid transparent;box-shadow:0 2px 18px rgba(18,44,55,.07);transition:all .24s}
+    .why-card:hover{border-top-color:var(--teal);transform:translateY(-3px);box-shadow:var(--sh)}
+    .why-num{font-family:var(--ff-head);font-size:2.8rem;font-weight:700;color:rgba(41,122,137,.13);line-height:1;margin-bottom:16px}
+    .why-card h4{color:var(--navy);margin-bottom:10px;font-size:1.08rem}
+    .why-card p{font-size:.91rem}
+
+    /* ── LOCAL TEAM ── */
+    .team{background:var(--sand)}
+    .team-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
+    .team-img-wrap{position:relative}
+    .team-img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:4px;box-shadow:var(--sh-lg)}
+    .team-badge{position:absolute;top:-20px;right:-20px;background:var(--gold);color:#fff;padding:20px 22px;border-radius:6px;box-shadow:var(--sh);text-align:center}
+    .team-badge .big{font-family:var(--ff-head);font-size:2.4rem;font-weight:600;display:block;line-height:1}
+    .team-badge .sm{font-size:.68rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;opacity:.85;display:block;margin-top:3px}
+    .team-copy h2{color:var(--navy);margin-bottom:20px}
+    .team-copy .lede{font-size:1.1rem;color:var(--dark);margin-bottom:20px;font-weight:400}
+    .team-copy p{margin-bottom:16px;font-size:.96rem}
+    .team-roster{display:flex;flex-direction:column;gap:14px;margin:28px 0}
+    .roster-item{background:#fff;border-radius:8px;padding:16px 20px;display:flex;gap:14px;align-items:flex-start;box-shadow:0 2px 12px rgba(18,44,55,.07)}
+    .roster-icon{font-size:1.3rem;flex-shrink:0;margin-top:1px}
+    .roster-item h4{color:var(--navy);margin-bottom:3px;font-size:.95rem}
+    .roster-item p{font-size:.86rem;margin:0}
+    .objection-box{background:var(--navy);border-radius:8px;padding:24px 26px;margin-top:8px}
+    .objection-box .q{font-family:var(--ff-head);font-size:1.3rem;color:var(--gold);margin-bottom:10px;font-style:italic}
+    .objection-box p{color:rgba(255,255,255,.78);font-size:.93rem;margin:0}
+
+    /* ── STATS ── */
+    .stats-band{background:linear-gradient(135deg,var(--teal) 0%,var(--navy) 100%);padding:80px 0}
+    .stats-row{display:grid;grid-template-columns:repeat(4,1fr);gap:40px;text-align:center}
+    .stat-big{font-family:var(--ff-head);font-size:clamp(3rem,5vw,5rem);font-weight:300;color:#fff;display:block;line-height:1}
+    .stat-big em{font-style:normal;color:var(--gold)}
+    .stat-lbl{font-size:.76rem;letter-spacing:.13em;text-transform:uppercase;color:rgba(255,255,255,.55);margin-top:8px}
+
+    /* ── OWNER PITCH ── */
+    .owner{background:var(--cream)}
+    .owner-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start}
+    .owner-copy h2{color:var(--navy);margin-bottom:16px}
+    .owner-copy .lede{font-size:1.1rem;color:var(--dark);margin-bottom:18px}
+    .owner-copy p{margin-bottom:16px;font-size:.96rem}
+    .owner-checks{list-style:none;margin:24px 0;display:flex;flex-direction:column;gap:10px}
+    .owner-checks li{display:flex;align-items:flex-start;gap:12px;font-size:.95rem;color:var(--dark)}
+    .owner-checks li::before{content:'✓';width:22px;height:22px;border-radius:50%;background:var(--teal);color:#fff;display:flex;align-items:center;justify-content:center;font-size:.72rem;font-weight:700;flex-shrink:0;margin-top:1px}
+    .owner-img-wrap{position:sticky;top:100px}
+    .owner-img{width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:6px;box-shadow:var(--sh-lg);margin-bottom:20px}
+    .boutique-box{background:var(--navy);border-radius:8px;padding:28px;color:#fff}
+    .boutique-box h4{color:var(--gold);font-family:var(--ff-head);font-size:1.4rem;margin-bottom:10px;font-style:italic}
+    .boutique-box p{color:rgba(255,255,255,.75);font-size:.9rem}
+
+    /* ── PROCESS ── */
+    .process{background:var(--sand)}
+    .process-head{text-align:center;margin-bottom:60px}
+    .process-steps{display:grid;grid-template-columns:repeat(4,1fr);gap:0;position:relative}
+    .process-steps::before{content:'';position:absolute;top:34px;left:12%;right:12%;height:1px;background:var(--teal);opacity:.2;z-index:0}
+    .pstep{text-align:center;padding:0 16px;position:relative;z-index:1}
+    .pstep-num{width:68px;height:68px;border-radius:50%;background:var(--teal);color:#fff;display:flex;align-items:center;justify-content:center;font-family:var(--ff-head);font-size:1.7rem;font-weight:300;margin:0 auto 22px}
+    .pstep h4{color:var(--navy);margin-bottom:10px}
+    .pstep p{font-size:.87rem}
+
+    /* ── REVIEWS ── */
+    .reviews{background:var(--navy);padding:96px 0}
+    .reviews-head{text-align:center;margin-bottom:56px}
+    .reviews-head h2{color:#fff}
+    .reviews-head p{color:rgba(255,255,255,.55);margin-top:10px}
+    .rev-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+    .rev-card{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:8px;padding:30px;transition:background .2s}
+    .rev-card:hover{background:rgba(255,255,255,.09)}
+    .stars{color:var(--gold);letter-spacing:2px;margin-bottom:14px;font-size:1rem}
+    .rev-text{font-style:italic;color:rgba(255,255,255,.8);font-size:.95rem;margin-bottom:22px;line-height:1.75}
+    .rev-by{display:flex;align-items:center;gap:12px}
+    .rev-av{width:42px;height:42px;border-radius:50%;background:linear-gradient(135deg,var(--teal),var(--navy));display:flex;align-items:center;justify-content:center;font-family:var(--ff-head);font-size:1.1rem;color:#fff;flex-shrink:0}
+    .rev-name{font-weight:600;color:#fff;font-size:.9rem}
+    .rev-meta{font-size:.76rem;color:rgba(255,255,255,.45)}
+
+    /* ── FORM ── */
+    .form-section{background:var(--cream)}
+    .form-wrap{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start}
+    .form-copy h2{color:var(--navy);margin-bottom:16px}
+    .form-copy p{margin-bottom:14px;font-size:.96rem}
+    .pain-list{margin:24px 0;display:flex;flex-direction:column;gap:10px}
+    .pain{background:rgba(205,99,72,.07);border-left:3px solid var(--coral);padding:12px 16px;border-radius:0 4px 4px 0;font-size:.9rem;color:var(--dark)}
+    .pain strong{color:var(--coral)}
+    .form-box{background:#fff;border-radius:10px;padding:40px 36px;box-shadow:var(--sh-lg)}
+    .form-box h3{color:var(--navy);margin-bottom:6px;font-size:1.7rem}
+    .form-sub{color:var(--mid);font-size:.88rem;margin-bottom:28px}
+    .field{margin-bottom:18px}
+    .field label{display:block;font-size:.78rem;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--mid);margin-bottom:5px}
+    .field input,.field select,.field textarea{width:100%;padding:11px 15px;border:1.5px solid #dde4e8;border-radius:var(--r);font-family:var(--ff-body);font-size:.95rem;color:var(--dark);background:#fff;transition:border-color .18s;outline:none}
+    .field input:focus,.field select:focus,.field textarea:focus{border-color:var(--teal)}
+    .field textarea{min-height:100px;resize:vertical}
+    .field-2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+    .sbtn{width:100%;padding:15px;background:var(--teal);color:#fff;border:none;border-radius:var(--r);font-family:var(--ff-body);font-size:.97rem;font-weight:600;cursor:pointer;transition:background .2s,transform .15s;letter-spacing:.04em}
+    .sbtn:hover{background:#1f6575;transform:translateY(-1px)}
+    .form-note{text-align:center;margin-top:12px;font-size:.76rem;color:var(--light)}
+
+    /* ── FOOTER ── */
+    footer{background:var(--dark);color:rgba(255,255,255,.65)}
+    .ft-top{padding:68px 0 44px}
+    .ft-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:44px}
+    .ft-brand .wm{font-family:var(--ff-head);font-size:1.7rem;color:#fff}
+    .ft-brand .ws{font-size:.62rem;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.38);display:block;margin-top:2px}
+    .ft-brand p{margin-top:14px;font-size:.86rem;line-height:1.68}
+    .ft-social{display:flex;gap:10px;margin-top:20px}
+    .ft-si{width:34px;height:34px;border-radius:50%;border:1px solid rgba(255,255,255,.18);display:flex;align-items:center;justify-content:center;font-size:.85rem;transition:all .2s}
+    .ft-si:hover{background:var(--teal);border-color:var(--teal);color:#fff}
+    .ft-col h5{color:#fff;font-size:.76rem;font-weight:700;letter-spacing:.13em;text-transform:uppercase;margin-bottom:16px;font-family:var(--ff-body)}
+    .ft-col ul{list-style:none;display:flex;flex-direction:column;gap:9px}
+    .ft-col li{font-size:.86rem}
+    .ft-col a{color:rgba(255,255,255,.58);transition:color .18s}
+    .ft-col a:hover{color:#fff}
+    .ft-bot{border-top:1px solid rgba(255,255,255,.09);padding:22px 0;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:14px}
+    .ft-bot p{font-size:.8rem;margin:0}
+    .ft-bot a{color:rgba(255,255,255,.45)}
+    .ft-bot a:hover{color:#fff}
+
+    /* ── RESPONSIVE ── */
+    @media(max-width:1020px){
+      .about-grid,.team-grid,.owner-grid,.problem-inner,.form-wrap{grid-template-columns:1fr;gap:48px}
+      .about-img-float{display:none}
+      .team-badge{display:none}
+      .owner-img-wrap{position:static}
+      .why-grid{grid-template-columns:1fr 1fr}
+      .dining-grid{grid-template-columns:1fr 1fr}
+      .stats-row{grid-template-columns:1fr 1fr;gap:28px}
+      .process-steps{grid-template-columns:1fr 1fr;gap:32px}
+      .process-steps::before{display:none}
+      .rev-grid{grid-template-columns:1fr}
+      .ft-grid{grid-template-columns:1fr 1fr;gap:32px}
+      .dest-grid{grid-template-columns:1fr 1fr}
+      .dcard.wide{grid-column:span 2}
+    }
+    @media(max-width:700px){
+      .section{padding:64px 0}
+      nav .nav-links{display:none}
+      .burger{display:flex}
+      .strip-stat{min-width:120px}
+      .why-grid{grid-template-columns:1fr}
+      .dining-grid{grid-template-columns:1fr}
+      .act-grid,.nature-grid{grid-template-columns:1fr}
+      .dest-grid{grid-template-columns:1fr}
+      .dcard.wide{grid-column:span 1}
+      .stats-row{grid-template-columns:1fr 1fr}
+      .process-steps{grid-template-columns:1fr}
+      .ft-grid{grid-template-columns:1fr;gap:28px}
+      .form-box{padding:28px 20px}
+      .field-2{grid-template-columns:1fr}
+      .comp-table{overflow-x:auto}
+      table{min-width:480px}
+      h2{font-size:1.9rem}
+    }
+  </style>
+</head>
+<body>
+
+<!-- MOBILE NAV -->
+<div class="mobile-nav" id="mNav">
+  <span class="mobile-close" onclick="closeMob()">✕</span>
+  <a href="#about" onclick="closeMob()">About Edisto</a>
+  <a href="#guide" onclick="closeMob()">Island Guide</a>
+  <a href="#problem" onclick="closeMob()">For Owners</a>
+  <a href="#team" onclick="closeMob()">Our Team</a>
+  <a href="#form" onclick="closeMob()" style="color:var(--gold)">Partner With Us</a>
+</div>
+
+<!-- NAV -->
+<nav id="nav">
+  <div class="nav-inner">
+    <a href="#" class="logo">
+      <span class="logo-main">Edisto Stays</span>
+      <span class="logo-sub">by Basecamp Getaways</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#about">About Edisto</a></li>
+      <li class="has-drop">
+        <a href="#guide">Island Guide ▾</a>
+        <div class="drop">
+          <a href="#dining">Dining &amp; Seafood</a>
+          <a href="#fishing">Fishing &amp; Charters</a>
+          <a href="#watersports">Water Sports</a>
+          <a href="#nature">Nature &amp; Wildlife</a>
+        </div>
+      </li>
+      <li class="has-drop">
+        <a href="#problem">For Owners ▾</a>
+        <div class="drop">
+          <a href="#problem">The Management Problem</a>
+          <a href="#why">Why Edisto Stays</a>
+          <a href="#team">Our Local Team</a>
+          <a href="#process">How It Works</a>
+        </div>
+      </li>
+      <li><a href="#form" class="nav-cta">Get Free Estimate</a></li>
+    </ul>
+    <div class="burger" onclick="openMob()"><span></span><span></span><span></span></div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg" id="heroBg">
+    <!-- slide 1: SC beach waves at sunset -->
+    <div class="slide on" style="background-image:url('https://images.unsplash.com/photo-1616991711915-807d00010cd7?w=1920&auto=format&fit=crop&q=85')"></div>
+    <!-- slide 2: SC beach path through sea grass -->
+    <div class="slide" style="background-image:url('https://images.unsplash.com/photo-1690970526023-2054da90656a?w=1920&auto=format&fit=crop&q=85')"></div>
+    <!-- slide 3: Live oak / Spanish moss canopy -->
+    <div class="slide" style="background-image:url('https://images.unsplash.com/photo-1467767079704-1e5389c42c9e?w=1920&auto=format&fit=crop&q=85')"></div>
+    <!-- slide 4: Lowcountry person on beach -->
+    <div class="slide" style="background-image:url('https://images.unsplash.com/photo-1568031565377-31a4d83ecdde?w=1920&auto=format&fit=crop&q=85')"></div>
+  </div>
+
+  <div class="hero-body">
+    <span class="hero-tag">Edisto Island, South Carolina</span>
+    <h1><strong>South Carolina's Best-Kept Secret.</strong><br><em>Managed the Way It Deserves.</em></h1>
+    <p class="hero-lead">Uncrowded beaches. Legendary shelling. Ancient live oaks draped in Spanish moss. Edisto has always been extraordinary. Now it finally has a management company that is too.</p>
+    <div class="hero-actions">
+      <a href="#guide" class="btn btn-teal btn-lg">Explore the Island</a>
+      <a href="#form" class="btn btn-ghost btn-lg">Own a Property? Let's Talk</a>
+    </div>
+  </div>
+
+  <div class="hero-dots" id="heroDots"></div>
+  <div class="hero-scroll-cue">
+    <span>Scroll</span>
+    <div class="hero-line"></div>
+  </div>
+</section>
+
+<!-- STRIP -->
+<div class="strip">
+  <div class="container">
+    <div class="strip-inner">
+      <div class="strip-stat"><span class="strip-num">10K+</span><span class="strip-lbl">Booked Nights</span></div>
+      <div class="strip-stat"><span class="strip-num">4.9★</span><span class="strip-lbl">Avg Guest Rating</span></div>
+      <div class="strip-stat"><span class="strip-num">20+</span><span class="strip-lbl">Years RE Experience</span></div>
+      <div class="strip-stat"><span class="strip-num">100%</span><span class="strip-lbl">Keyless Entry</span></div>
+      <div class="strip-stat"><span class="strip-num">AI</span><span class="strip-lbl">Daily Dynamic Pricing</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- ABOUT EDISTO -->
+<section class="section" id="about" style="background:var(--cream)">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-imgs">
+        <!-- REAL EDISTO PHOTO: Botany Bay tidal creek, geotagged Edisto Island SC -->
+        <img class="about-img-main"
+          src="https://images.unsplash.com/photo-1542316225946-6cd1df30a8fb?w=900&auto=format&fit=crop&q=85"
+          alt="Botany Bay tidal creek at Edisto Island, South Carolina"/>
+        <!-- REAL EDISTO PHOTO: Shells on driftwood at Botany Bay beach, geotagged Edisto Island SC -->
+        <img class="about-img-float"
+          src="https://images.unsplash.com/photo-1658199940728-2f6f32197649?w=600&auto=format&fit=crop&q=85"
+          alt="Shells on driftwood at Botany Bay beach, Edisto Island"/>
+      </div>
+      <div class="about-copy">
+        <span class="eyebrow">About Edisto Island</span>
+        <h2 style="color:var(--navy)">One of the Last Unspoiled Barrier Islands on the East Coast</h2>
+        <p>Tucked 41 miles south of Charleston within the ACE Basin — one of the largest undeveloped estuaries on the Atlantic Coast — Edisto Island is what the South Carolina coast looked like before overdevelopment arrived. No traffic lights. No high-rises. No chain hotels. Over half the island is protected by conservation easements.</p>
+        <p>Families have been coming back for generations. The wide, flat beaches produce legendary shelling. The tidal creeks teem with dolphins, alligators, and blue crab. The live oak canopy over Hwy 174 makes you exhale before you've even arrived.</p>
+
+        <div class="about-pills">
+          <div class="pill">
+            <div class="pill-icon">🐚</div>
+            <p><strong style="color:var(--navy)">World-class shelling.</strong> Shark teeth, whelks, lightning conchs, and whole shells that collectors drive hours to find. Edisto's wide, flat beach and strong tidal action make every low tide a treasure hunt.</p>
+          </div>
+          <div class="pill">
+            <div class="pill-icon">🌿</div>
+            <p><strong style="color:var(--navy)">Botany Bay Plantation.</strong> 4,687 acres of maritime forest, marsh, and the iconic Boneyard Beach — dead live oaks standing in the surf, one of the most photographed landscapes in the Southeast. Free. Open dawn to dusk (closed Tuesdays).</p>
+          </div>
+          <div class="pill">
+            <div class="pill-icon">🦅</div>
+            <p><strong style="color:var(--navy)">ACE Basin.</strong> 350,000+ acres of protected wetlands — bald eagles, painted buntings, loggerhead sea turtles, and bottlenose dolphins within minutes of your front door.</p>
+          </div>
+          <div class="pill">
+            <div class="pill-icon">🦞</div>
+            <p><strong style="color:var(--navy)">Lowcountry food culture.</strong> Wild-caught shrimp off the dock at Flowers Seafood. A shrimp boil on a screened porch. Blackened grouper over shrimp and grits at Pressley's on the marina. This is not beach-town food.</p>
+          </div>
+        </div>
+        <a href="#guide" class="btn btn-outline">Explore the Island Guide →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DESTINATION GRID -->
+<div class="dest-wrap">
+  <div class="dest-head">
+    <div class="container">
+      <span class="eyebrow eyebrow-light">The Island Awaits</span>
+      <h2>Everything Edisto Has to Offer</h2>
+      <p>The barrier island that repeat guests plan their entire year around.</p>
+    </div>
+  </div>
+  <div class="dest-grid">
+    <div class="dcard wide">
+      <div class="dcard-img-wrap">
+        <img class="dcard-img" src="https://images.unsplash.com/photo-1616991711915-807d00010cd7?w=1200&auto=format&fit=crop&q=85" alt="Edisto Beach at sunset"/>
+      </div>
+      <div class="dcard-ov">
+        <span class="dcard-title">Edisto Beach</span>
+        <span class="dcard-sub">4 uncrowded miles of South Carolina shoreline</span>
+      </div>
+    </div>
+    <div class="dcard tall">
+      <div class="dcard-img-wrap">
+        <img class="dcard-img" src="https://images.unsplash.com/photo-1542316225946-6cd1df30a8fb?w=600&auto=format&fit=crop&q=85" alt="Botany Bay tidal creek Edisto Island"/>
+      </div>
+      <div class="dcard-ov">
+        <span class="dcard-title">Botany Bay</span>
+        <span class="dcard-sub">The legendary boneyard beach</span>
+      </div>
+    </div>
+    <div class="dcard">
+      <div class="dcard-img-wrap">
+        <img class="dcard-img" src="https://images.unsplash.com/photo-1709174158257-426c635cd7c1?w=700&auto=format&fit=crop&q=85" alt="Spanish moss and live oak trees"/>
+      </div>
+      <div class="dcard-ov">
+        <span class="dcard-title">Live Oak Canopy</span>
+        <span class="dcard-sub">Ancient trees draped in Spanish moss</span>
+      </div>
+    </div>
+    <div class="dcard">
+      <div class="dcard-img-wrap">
+        <img class="dcard-img" src="https://images.unsplash.com/photo-1658199940728-2f6f32197649?w=700&auto=format&fit=crop&q=85" alt="Shelling on Edisto Beach"/>
+      </div>
+      <div class="dcard-ov">
+        <span class="dcard-title">World-Class Shelling</span>
+        <span class="dcard-sub">Shark teeth, whelks &amp; conchs at low tide</span>
+      </div>
+    </div>
+    <div class="dcard">
+      <div class="dcard-img-wrap">
+        <img class="dcard-img" src="https://images.unsplash.com/photo-1638637010076-1f15a6028b7a?w=700&auto=format&fit=crop&q=85" alt="Fishing pier Edisto"/>
+      </div>
+      <div class="dcard-ov">
+        <span class="dcard-title">Fishing &amp; Crabbing</span>
+        <span class="dcard-sub">Inshore, offshore &amp; shrimp boat charters</span>
+      </div>
+    </div>
+    <div class="dcard">
+      <div class="dcard-img-wrap">
+        <img class="dcard-img" src="https://images.unsplash.com/photo-1568036288527-f405ac388419?w=700&auto=format&fit=crop&q=85" alt="Lowcountry tidal creek kayaking"/>
+      </div>
+      <div class="dcard-ov">
+        <span class="dcard-title">ACE Basin Kayaking</span>
+        <span class="dcard-sub">Paddle the creeks with dolphins &amp; eagles</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ISLAND GUIDE -->
+<section class="section guide-wrap" id="guide">
+  <div class="container">
+    <div style="text-align:center;margin-bottom:48px">
+      <span class="eyebrow">Edisto Island Guide</span>
+      <h2 style="color:var(--navy)">Act Like a Local</h2>
+      <p style="max-width:560px;margin:12px auto 0">Everything you need to know before (and during) your stay on Edisto Island. Real places. Real links. No filler.</p>
+    </div>
+
+    <div class="guide-tabs">
+      <button class="gtab active" onclick="showTab('dining',this)">🦞 Dining &amp; Seafood</button>
+      <button class="gtab" onclick="showTab('fishing',this)">🎣 Fishing &amp; Charters</button>
+      <button class="gtab" onclick="showTab('watersports',this)">🚣 Water Sports</button>
+      <button class="gtab" onclick="showTab('nature',this)">🌿 Nature &amp; Wildlife</button>
+      <button class="gtab" onclick="showTab('activities',this)">🚴 Activities &amp; Rentals</button>
+    </div>
+
+    <!-- DINING -->
+    <div class="gpanel active" id="tab-dining">
+      <div class="dining-grid">
+        <div class="rest-card">
+          <img class="rest-img" src="https://images.unsplash.com/photo-1534258936925-c58bed479fcb?w=600&auto=format&fit=crop&q=80" alt="Fresh lowcountry seafood"/>
+          <div class="rest-body">
+            <span class="rest-tag">Seafood · Waterfront</span>
+            <h4>The Waterfront Restaurant</h4>
+            <p>Fourth-generation Edisto seafood family. Owner Scot Flowers runs his own shrimp boats — the catch on your plate may have been in the water this morning. Casual, family-friendly, and genuinely local.</p>
+            <a class="rest-link" href="https://thewaterfrontrestaurantedisto.com" target="_blank" rel="noopener">thewaterfrontrestaurantedisto.com →</a>
+          </div>
+        </div>
+        <div class="rest-card">
+          <img class="rest-img" src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=600&auto=format&fit=crop&q=80" alt="Upscale marina dining"/>
+          <div class="rest-body">
+            <span class="rest-tag">Upscale · Marina</span>
+            <h4>Pressley's at the Marina</h4>
+            <p>Waterfront dining on Big Bay Creek. Blackened grouper, two-lump crab cakes with beurre blanc, shrimp &amp; grits. This is the nicer evening out on Edisto — no reservations, go early.</p>
+            <a class="rest-link" href="http://pressleysatthemarina.com" target="_blank" rel="noopener">pressleysatthemarina.com →</a>
+          </div>
+        </div>
+        <div class="rest-card">
+          <img class="rest-img" src="https://images.unsplash.com/photo-1551218808-94e220e084d2?w=600&auto=format&fit=crop&q=80" alt="SeaCow Eatery local breakfast"/>
+          <div class="rest-body">
+            <span class="rest-tag">Local Institution · Breakfast &amp; Lunch</span>
+            <h4>SeaCow Eatery</h4>
+            <p>Beloved Edisto institution since 1995. Quirky decor, massive portions, Southern-style everything. If you only eat at one place on Edisto, locals will argue it should be here.</p>
+            <a class="rest-link" href="https://www.theseacoweatery.com" target="_blank" rel="noopener">theseacoweatery.com →</a>
+          </div>
+        </div>
+        <div class="rest-card">
+          <img class="rest-img" src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=600&auto=format&fit=crop&q=80" alt="Casual beach bar and grill"/>
+          <div class="rest-body">
+            <span class="rest-tag">Bar &amp; Grill · Pier Views</span>
+            <h4>Coot's Bar &amp; Grill</h4>
+            <p>Right on the Edisto Beach pier at Palmetto Blvd. Burgers, seafood baskets, frozen drinks, live music, and ocean views. The classic Edisto beach hangout — pet-friendly, laid-back, and exactly what you want after a day in the sun.</p>
+            <a class="rest-link" href="https://cootsbargrill.com" target="_blank" rel="noopener">cootsbargrill.com →</a>
+          </div>
+        </div>
+        <div class="rest-card">
+          <img class="rest-img" src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=600&auto=format&fit=crop&q=80" alt="Whaleys seafood restaurant"/>
+          <div class="rest-body">
+            <span class="rest-tag">Casual · American &amp; Seafood</span>
+            <h4>Whaley's Restaurant &amp; Bar</h4>
+            <p>Classic American fare and local seafood at honest prices. Burgers, homemade potato chips, fish baskets, and cold beers. Open 7 days, lunch and dinner. Takeout available.</p>
+            <a class="rest-link" href="https://whaleyseb.com" target="_blank" rel="noopener">whaleyseb.com →</a>
+          </div>
+        </div>
+        <div class="rest-card">
+          <img class="rest-img" src="https://images.unsplash.com/photo-1606850780508-c3691e68c3e3?w=600&auto=format&fit=crop&q=80" alt="Flowers Seafood Market fresh catch"/>
+          <div class="rest-body">
+            <span class="rest-tag">Seafood Market · To-Go</span>
+            <h4>Flowers Seafood Company</h4>
+            <p>The definitive Edisto seafood experience. Live blue crab, wild shrimp, fresh grouper, snapper, and flounder — often off their own boats. To-go food truck Thurs–Sat. Stocking your vacation home kitchen starts here.</p>
+            <a class="rest-link" href="https://flowersseafood.com" target="_blank" rel="noopener">flowersseafood.com →</a>
+          </div>
+        </div>
+      </div>
+      <p style="text-align:center;margin-top:32px;font-size:.88rem">More dining at <a href="https://edistochamber.com/where-to-eat-edisto/" target="_blank" rel="noopener" style="color:var(--teal);font-weight:600">edistochamber.com</a></p>
+    </div>
+
+    <!-- FISHING -->
+    <div class="gpanel" id="tab-fishing">
+      <div class="act-grid">
+        <div class="act-card">
+          <div class="act-icon">🎣</div>
+          <div>
+            <h4>Fontaine Charters</h4>
+            <p>Capt. Jimmy Skinner, USCG-licensed. Guiding out of Edisto since 2006. Inshore: spottail bass, speckled trout, flounder, black drum. Offshore: king mackerel and bottom fish. Multiple trip lengths, all experience levels.</p>
+            <div class="act-links">
+              <a class="act-link" href="https://www.fontainecharters.com" target="_blank" rel="noopener">fontainecharters.com</a>
+            </div>
+          </div>
+        </div>
+        <div class="act-card">
+          <div class="act-icon">🦐</div>
+          <div>
+            <h4>Edisto Beach Shrimp Boat Charters</h4>
+            <p>The uniquely Edisto experience — aboard the Miss Ellen catamaran with Capt. Clif. Pull your own crab pot, haul shrimp nets, find sand dollars. 20+ years on Edisto waters. Perfect for families and first-timers.</p>
+            <div class="act-links">
+              <a class="act-link" href="https://edistobeachshrimpboatcharters.com" target="_blank" rel="noopener">edistobeachshrimpboatcharters.com</a>
+            </div>
+          </div>
+        </div>
+        <div class="act-card">
+          <div class="act-icon">🐟</div>
+          <div>
+            <h4>Edisto Watersports &amp; Tackle — Charters</h4>
+            <p>Full-service outfitter at the Edisto marina. Inshore and offshore fishing charters for all experience levels. Also offers kayak rentals, eco tours, and night gigging trips. The island's all-in-one outdoor outfitter.</p>
+            <div class="act-links">
+              <a class="act-link" href="https://edistowatersports.net/fishing-charters" target="_blank" rel="noopener">edistowatersports.net</a>
+            </div>
+          </div>
+        </div>
+        <div class="act-card">
+          <div class="act-icon">🎯</div>
+          <div>
+            <h4>Palm State Fishing</h4>
+            <p>Capt. Parker Inkelaar. Specializes in inshore redfish and offshore kingfish, mahi, snapper, and grouper. Private charters out of Edisto, Charleston, and Beaufort. Family-friendly, relaxed atmosphere.</p>
+            <div class="act-links">
+              <a class="act-link" href="https://palmstatefishing.com" target="_blank" rel="noopener">palmstatefishing.com</a>
+            </div>
+          </div>
+        </div>
+        <div class="act-card">
+          <div class="act-icon">🪝</div>
+          <div>
+            <h4>Line Life Fishing Company</h4>
+            <p>Edisto-based fishing charter company offering personalized inshore experiences. Book a trip through their site for a more intimate, guide-led experience on the local waterways.</p>
+            <div class="act-links">
+              <a class="act-link" href="https://www.linelifefishingcompany.com" target="_blank" rel="noopener">linelifefishingcompany.com</a>
+            </div>
+          </div>
+        </div>
+        <div class="act-card">
+          <div class="act-icon">📍</div>
+          <div>
+            <h4>What to Target &amp; When</h4>
+            <p><strong style="color:var(--navy)">Inshore (year-round):</strong> Red drum/spottail bass, speckled trout, flounder, black drum, and tarpon in summer.<br/><strong style="color:var(--navy)">Offshore:</strong> Mahi-mahi, king mackerel, sailfish, snapper, and grouper.<br/><strong style="color:var(--navy)">From the pier or bank:</strong> Bluefish, whiting, and sheepshead.</p>
+            <div class="act-links">
+              <a class="act-link" href="https://carolinaguideservice.com/edisto-island-fishing-the-complete-guide-2025/" target="_blank" rel="noopener">Complete Fishing Guide</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- WATER SPORTS -->
+    <div class="gpanel" id="tab-watersports">
+      <div class="act-grid">
+        <div class="act-card">
+          <div class="act-icon">🚣</div>
+          <div>
+            <h4>Edisto Watersports &amp; Tackle</h4>
+            <p>Kayak and paddleboard rentals, guided 2-hour ACE Basin eco paddles (instruction, life vests, paddles included), sunset tours, night gigging, and Otter Island excursions. The go-to outfitter on the island, open 7 days.</p>
+            <div class="act-links">
+              <a class="act-link" href="https://edistowatersports.net" target="_blank" rel="noopener">edistowatersports.net</a>
+            </div>
+          </div>
+        </div>
+        <div class="act-card">
+          <div class="act-icon">🐬</div>
+          <div>
+            <h4>Botany Bay Ecotours</h4>
+            <p>The only biologist-owned tour company on Edisto Beach. Public and private boat ecotours of St. Helena Sound and the ACE Basin creeks. Dolphin watching, ecology tours, and wildlife education. Runs March–November.</p>
+            <div class="act-links">
+              <a class="act-link" href="https://botanybayecotours.com" target="_blank" rel="noopener">botanybayecotours.com</a>
+            </div>
+          </div>
+        </div>
+        <div class="act-card">
+          <div class="act-icon">⚓</div>
+          <div>
+            <h4>Plot Twist Charters</h4>
+            <p>Official partner of Edisto Beach State Park. Dolphin tours, sunset cruises, eco and history tours, island excursions, and water taxi service. Highly reviewed for intimate, educational on-water experiences.</p>
+            <div class="act-links">
+              <a class="act-link" href="https://www.plottwistcharters.com" target="_blank" rel="noopener">plottwistcharters.com</a>
+            </div>
+          </div>
+        </div>
+        <div class="act-card">
+          <div class="act-icon">🚲</div>
+          <div>
+            <h4>Island Bikes &amp; Outfitters</h4>
+            <p>Kayak and canoe rentals with free delivery. Adult and kids bikes, helmets, and beach gear. Edisto's only full-service bike shop with repairs. Free delivery — your gear arrives at your rental home. Open Mon–Sat 8:30am–4:30pm.</p>
+            <div class="act-links">
+              <a class="act-link" href="https://islandbikesandoutfitters.com" target="_blank" rel="noopener">islandbikesandoutfitters.com</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- NATURE -->
+    <div class="gpanel" id="tab-nature">
+      <div class="nature-grid">
+        <div class="nat-card">
+          <img class="nat-img" src="https://images.unsplash.com/photo-1542316225946-6cd1df30a8fb?w=700&auto=format&fit=crop&q=85" alt="Botany Bay tidal creek Edisto Island SC"/>
+          <div class="nat-body">
+            <span class="nat-badge">Don't Miss</span>
+            <h4>Botany Bay Plantation Heritage Preserve</h4>
+            <p>4,687 acres of maritime forest, salt marsh, and the iconic Boneyard Beach — dead live oaks standing in the Atlantic surf. Free. Day-use pass at the kiosk. Open dawn to dusk, <strong>closed Tuesdays</strong>. No shells or artifacts may be removed. Dogs on leash allowed (not on beach causeway).</p>
+            <a href="https://edistochamber.com/botany-bay/" target="_blank" rel="noopener">Learn more at edistochamber.com →</a>
+          </div>
+        </div>
+        <div class="nat-card">
+          <img class="nat-img" src="https://images.unsplash.com/photo-1568036288527-f405ac388419?w=700&auto=format&fit=crop&q=85" alt="ACE Basin estuary South Carolina"/>
+          <div class="nat-body">
+            <span class="nat-badge">Natural Wonder</span>
+            <h4>ACE Basin National Wildlife Refuge</h4>
+            <p>350,000+ acres. One of the largest undeveloped estuarine systems on the Atlantic Coast. 291 documented bird species including wood stork, painted bunting, and bald eagle. Free walking trails. Excellent kayaking and wildlife photography.</p>
+            <a href="https://www.fws.gov/refuge/ernest-f-hollings-ace-basin" target="_blank" rel="noopener">fws.gov/ace-basin →</a>
+          </div>
+        </div>
+        <div class="nat-card">
+          <img class="nat-img" src="https://images.unsplash.com/photo-1679509552644-439a62a485b4?w=700&auto=format&fit=crop&q=85" alt="Edisto Beach State Park"/>
+          <div class="nat-body">
+            <span class="nat-badge">State Park</span>
+            <h4>Edisto Beach State Park</h4>
+            <p>Established 1935. 1,255 acres of maritime forest, salt marsh, and beach. Hiking and biking trails, environmental learning center with touch tanks and wildlife programs. Camping and cabin rentals available.</p>
+            <a href="https://southcarolinaparks.com/edisto-beach" target="_blank" rel="noopener">southcarolinaparks.com →</a>
+          </div>
+        </div>
+        <div class="nat-card">
+          <img class="nat-img" src="https://images.unsplash.com/photo-1658199940728-2f6f32197649?w=700&auto=format&fit=crop&q=85" alt="Loggerhead sea turtle nesting Edisto Beach"/>
+          <div class="nat-body">
+            <span class="nat-badge">Conservation</span>
+            <h4>Edisto Beach Loggerhead Turtle Project</h4>
+            <p>Founded 1982. One of six index nesting beaches in SC with surveys running continuously since 1982. Volunteer-run 501(c)(3) — authorized by SC DNR. Nesting season: May–October. Volunteers walk the beach at sunrise daily to mark and protect nests.</p>
+            <a href="https://edistobeachseaturtles.com" target="_blank" rel="noopener">edistobeachseaturtles.com →</a>
+          </div>
+        </div>
+      </div>
+      <div style="text-align:center;margin-top:40px">
+        <a href="https://edistochamber.com" target="_blank" rel="noopener" class="btn btn-outline btn-sm">Edisto Chamber of Commerce →</a>
+        &nbsp;&nbsp;
+        <a href="https://edistoisland.com" target="_blank" rel="noopener" class="btn btn-outline btn-sm">EdistoIsland.com →</a>
+      </div>
+    </div>
+
+    <!-- ACTIVITIES -->
+    <div class="gpanel" id="tab-activities">
+      <div class="act-grid">
+        <div class="act-card">
+          <div class="act-icon">🚺</div>
+          <div>
+            <h4>Golf Cart Rentals — Edisto Essentials</h4>
+            <p>4- and 6-seat golf carts, Low Speed Vehicles (LSVs), bikes, boogie boards, beach umbrellas, and beach chairs. Golf carts are the way you get around Edisto. Book early in peak season.</p>
+            <div class="act-links">
+              <a class="act-link" href="https://edistoessentials.com" target="_blank" rel="noopener">edistoessentials.com</a>
+            </div>
+          </div>
+        </div>
+        <div class="act-card">
+          <div class="act-icon">🚲</div>
+          <div>
+            <h4>Bike Rentals — Edisto Bike Rentals</h4>
+            <p>Bike and golf cart rentals with free pickup and delivery. Adult and children's bikes, helmets, baby seats, baskets, and pull carts. Edisto's flat roads and live oak canopy make biking the best way to explore.</p>
+            <div class="act-links">
+              <a class="act-link" href="https://edistobikerentals.com" target="_blank" rel="noopener">edistobikerentals.com</a>
+            </div>
+          </div>
+        </div>
+        <div class="act-card">
+          <div class="act-icon">🐍</div>
+          <div>
+            <h4>Edisto Island Serpentarium</h4>
+            <p>Live reptile attraction featuring snakes, alligators, turtles, and more. Educational, hands-on, and genuinely fascinating — even for adults who came in skeptical. Great for families with kids. On Hwy 174.</p>
+            <div class="act-links">
+              <a class="act-link" href="https://edistoserpentarium.com" target="_blank" rel="noopener">edistoserpentarium.com</a>
+            </div>
+          </div>
+        </div>
+        <div class="act-card">
+          <div class="act-icon">🛍️</div>
+          <div>
+            <h4>Local Shopping</h4>
+            <p><strong style="color:var(--navy)">Sabal &amp; Oak</strong> — coastal lifestyle brands (Free Fly, AFTCO, Marsh Wear).<br/><strong style="color:var(--navy)">South Edisto Trading Co.</strong> — best t-shirt selection on the island since 1995.<br/><strong style="color:var(--navy)">Edisto Island Bookstore</strong> — new and used books, local maps.</p>
+            <div class="act-links">
+              <a class="act-link" href="https://shopsofedisto.com" target="_blank" rel="noopener">shopsofedisto.com</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- THE MANAGEMENT PROBLEM -->
+<section class="section problem" id="problem">
+  <div class="container">
+    <div class="problem-inner">
+      <div class="problem-copy">
+        <span class="eyebrow eyebrow-gold">For Property Owners</span>
+        <h2>What Most Edisto Owners Are Quietly Settling For</h2>
+        <p class="lede">Edisto's established management companies have been here a long time. Some trace their roots back more than 50 years on the island. That longevity has advantages — local relationships, name recognition, repeat-visitor traffic.</p>
+        <p>It also breeds complacency. When your market fills up every July regardless of what you do, the pressure to innovate disappears. Pricing gets set in January and left alone. Listing photos from 2016 stay up. Guests still drive to an office to pick up a physical key before they can reach your property.</p>
+        <blockquote>"When you've been comfortable on an island for 50 years, you don't install smart locks. You don't update pricing daily. Innovation requires urgency — and incumbency removes urgency."</blockquote>
+        <p>When large national firms acquired beloved local names on Edisto, their owners found themselves managed by call centers instead of people who knew their property. Revenue projections that looked great on the proposal didn't materialize. Fees that weren't visible in the pitch turned up on the statement.</p>
+        <p>Meanwhile, the independently boutique operators — and there are a few good ones on Edisto — often lack the technology infrastructure to compete for modern guests. Great relationships, dated tools.</p>
+
+        <div class="fee-math">
+          <h4>The Fee Math Worth Running</h4>
+          <p>If your property earns <strong>$80,000 per year</strong> and your management company takes <strong>30%</strong>, you're writing an <strong>$24,000 check</strong> annually.</p>
+          <p>At Edisto Stays, the same home would keep <strong>$12,000–$16,000 more per year</strong> — before accounting for the revenue gains that come from dynamic pricing, better photography, and modern listings.</p>
+          <p>We don't publish our exact rate here because we price based on your property. But we will tell you clearly: <strong>we are meaningfully below the 25–35% the major Edisto incumbents charge.</strong></p>
+        </div>
+      </div>
+
+      <div>
+        <div class="comp-table">
+          <table>
+            <thead>
+              <tr>
+                <th>Company Type</th>
+                <th>Mgmt Fee</th>
+                <th>Key Pickup</th>
+                <th>Tech</th>
+                <th>Local?</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Legacy Island Realty<br/><small style="color:rgba(255,255,255,.4)">50+ yr incumbents</small></td>
+                <td><span class="tag-bad">25–35%</span></td>
+                <td><span class="tag-bad">Office required</span></td>
+                <td><span class="tag-bad">Minimal</span></td>
+                <td><span class="tag-good">Yes</span></td>
+              </tr>
+              <tr>
+                <td>National Corporations<br/><small style="color:rgba(255,255,255,.4)">Absorbed local brands</small></td>
+                <td><span class="tag-bad">25–35%+</span></td>
+                <td><span class="tag-ok">Varies</span></td>
+                <td><span class="tag-ok">Partial</span></td>
+                <td><span class="tag-bad">No</span></td>
+              </tr>
+              <tr>
+                <td>Remote Low-Fee Ops<br/><small style="color:rgba(255,255,255,.4)">Fully off-island</small></td>
+                <td><span class="tag-good">10–15%</span></td>
+                <td><span class="tag-good">Keyless</span></td>
+                <td><span class="tag-good">Yes</span></td>
+                <td><span class="tag-bad">No team on island</span></td>
+              </tr>
+              <tr class="us">
+                <td>Edisto Stays<br/><small style="color:rgba(255,255,255,.55)">by Basecamp Getaways</small></td>
+                <td><span class="tag-good">Below market</span></td>
+                <td><span class="tag-good">100% Keyless</span></td>
+                <td><span class="tag-good">Full AI pricing</span></td>
+                <td><span class="tag-good">Local team</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div style="margin-top:28px;padding:24px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:8px">
+          <p style="color:rgba(255,255,255,.65);font-size:.88rem;margin-bottom:16px"><strong style="color:#fff">What nobody in this market offers today:</strong></p>
+          <div style="display:flex;flex-direction:column;gap:10px">
+            <div style="display:flex;gap:10px;align-items:flex-start">
+              <span style="color:var(--gold);flex-shrink:0">✓</span>
+              <span style="color:rgba(255,255,255,.72);font-size:.88rem">Local, on-island care team <em>plus</em> tech-forward operations</span>
+            </div>
+            <div style="display:flex;gap:10px;align-items:flex-start">
+              <span style="color:var(--gold);flex-shrink:0">✓</span>
+              <span style="color:rgba(255,255,255,.72);font-size:.88rem">Transparent, below-market fees with no hidden add-ons</span>
+            </div>
+            <div style="display:flex;gap:10px;align-items:flex-start">
+              <span style="color:var(--gold);flex-shrink:0">✓</span>
+              <span style="color:rgba(255,255,255,.72);font-size:.88rem">AI-driven daily pricing updates, not a spreadsheet set in January</span>
+            </div>
+            <div style="display:flex;gap:10px;align-items:flex-start">
+              <span style="color:var(--gold);flex-shrink:0">✓</span>
+              <span style="color:rgba(255,255,255,.72);font-size:.88rem">Boutique portfolio — your home is not one of hundreds. It's one of a deliberate few.</span>
+            </div>
+          </div>
+        </div>
+        <div style="margin-top:24px;text-align:center">
+          <a href="#form" class="btn btn-gold btn-lg">Get Your Free Revenue Estimate →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY EDISTO STAYS -->
+<section class="section why" id="why">
+  <div class="container">
+    <div class="why-head">
+      <span class="eyebrow">Why Edisto Stays</span>
+      <h2 style="color:var(--navy)">Six Things We Do That Change the Outcome</h2>
+      <p>Owner satisfaction is a downstream result of guest satisfaction. We start there — and build everything else around it.</p>
+    </div>
+    <div class="why-grid">
+      <div class="why-card">
+        <div class="why-num">01</div>
+        <h4>Modern Marketing That Actually Converts</h4>
+        <p>Professional photography, SEO-optimized listings, AI-driven pricing updated daily, direct booking capability, and multi-channel distribution. We understand how modern guests discover and book — because we've built our portfolio around it.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-num">02</div>
+        <h4>Smart Locks. No Office. No Key Pickup. Ever.</h4>
+        <p>We won't ask your guests to drive to an office for a key. Every Edisto Stays property has smart locks installed. Guests receive a unique entry code before arrival. They go directly to your home. Simple.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-num">03</div>
+        <h4>Homes That Generate Five-Star Reviews</h4>
+        <p>We stock our properties to a standard that guests rave about: quality linens, fully equipped kitchens, beach gear, games, local guides, and the small touches that make people feel cared for — not processed. Your reviews are your pricing power.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-num">04</div>
+        <h4>A Cleaning &amp; Maintenance System You Can Count On</h4>
+        <p>After 10,000+ booked nights across multiple markets, our systems are tight. Vetted local cleaning teams. A trusted local maintenance network. Post-stay inspection reports with photos. You don't manage us — we manage the whole thing.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-num">05</div>
+        <h4>Complete Transparency. No Surprises.</h4>
+        <p>We tell you what you'll earn before you sign. Monthly statements you can actually read, with no mystery line items. A real-time owner portal where you can see bookings, revenue, and reviews at any moment. No fine print.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-num">06</div>
+        <h4>We Think Like Asset Owners, Not Booking Agents</h4>
+        <p>With 20+ years of real estate experience, we approach your property as an investment that needs to be protected, maintained, and grown. We're not here to maximize this season's occupancy at the expense of your property's long-term condition.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LOCAL TEAM -->
+<section class="section team" id="team">
+  <div class="container">
+    <div class="team-grid">
+      <div class="team-img-wrap">
+        <img class="team-img"
+          src="https://images.unsplash.com/photo-1467767079704-1e5389c42c9e?w=900&auto=format&fit=crop&q=85"
+          alt="Live oak canopy on Edisto Island South Carolina"/>
+        <div class="team-badge">
+          <span class="big">4.9★</span>
+          <span class="sm">Avg across portfolio</span>
+        </div>
+      </div>
+      <div class="team-copy">
+        <span class="eyebrow">Our Team &amp; Presence</span>
+        <h2 style="color:var(--navy)">You'll Ask If We're Local.<br/><em style="font-style:italic">Here's the Honest Answer.</em></h2>
+        <p class="lede">Basecamp Getaways is operated by people who aren't originally from Edisto Island. We won't pretend otherwise — and we don't think it matters the way you might expect.</p>
+        <p>What matters is whether your property is cared for, whether your guests have exceptional experiences, and whether your statements reflect real, growing revenue. That doesn't require the owner to live on the island. It requires the right team, the right systems, and the discipline to build both.</p>
+        <p>Our local Edisto care team — cleaning, maintenance, property checks — is made up of people who live and work on this island and in the surrounding Lowcountry. They know the contractors worth calling. They know how to care for homes in a salt-air environment. They respond to issues the same day because they're already here.</p>
+
+        <div class="team-roster">
+          <div class="roster-item">
+            <div class="roster-icon">🏠</div>
+            <div>
+              <h4>Local Cleaning Coordinator</h4>
+              <p>Experienced Lowcountry cleaning professionals — vetted, trained to our standards, and held accountable to post-stay photo inspections after every single turnover.</p>
+            </div>
+          </div>
+          <div class="roster-item">
+            <div class="roster-icon">🔧</div>
+            <div>
+              <h4>Local Maintenance Network</h4>
+              <p>Trusted, on-island maintenance partners who respond promptly. No waiting a week for a contractor who "might be able to come out." We built these relationships before we listed the first property.</p>
+            </div>
+          </div>
+          <div class="roster-item">
+            <div class="roster-icon">📱</div>
+            <div>
+              <h4>Guest Liaison — Lowcountry Based</h4>
+              <p>A dedicated guest contact within 30 minutes of Edisto Beach. When a guest needs something, a real person who knows the island responds — not a national call center.</p>
+            </div>
+          </div>
+          <div class="roster-item">
+            <div class="roster-icon">📊</div>
+            <div>
+              <h4>Revenue &amp; Operations Team</h4>
+              <p>The marketing, pricing, and owner communication functions are run by a team with 20+ years of real estate experience and a track record of 4.9-star performance across multiple markets.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="objection-box">
+          <div class="q">"But the big management companies have been on Edisto for 50 years."</div>
+          <p>And in those 50 years, they still haven't installed smart locks, still haven't adopted daily dynamic pricing, and still require guests to pick up a physical key at an office. Longevity and quality are not the same thing. We've earned a 4.9-star average across our current portfolio. That score isn't from longevity. It's from systems, standards, and a team that doesn't cut corners.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS BAND -->
+<section class="stats-band">
+  <div class="container">
+    <div class="stats-row">
+      <div>
+        <span class="stat-big">10<em>K+</em></span>
+        <div class="stat-lbl">Booked Nights Across Portfolio</div>
+      </div>
+      <div>
+        <span class="stat-big">4.9<em>★</em></span>
+        <div class="stat-lbl">Average Guest Review Score</div>
+      </div>
+      <div>
+        <span class="stat-big">20<em>+</em></span>
+        <div class="stat-lbl">Years Real Estate Experience</div>
+      </div>
+      <div>
+        <span class="stat-big">AI<em>+</em></span>
+        <div class="stat-lbl">Daily Dynamic Pricing Engine</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- OWNER PITCH -->
+<section class="section owner" id="owner">
+  <div class="container">
+    <div class="owner-grid">
+      <div class="owner-copy">
+        <span class="eyebrow">Partnership Details</span>
+        <h2 style="color:var(--navy)">Your Edisto Home Is an Asset. We Manage It Like One.</h2>
+        <p class="lede" style="color:var(--dark)">Edisto property owners invest in a place that is, by design, rare — undeveloped, unhurried, genuinely special. The management company you choose either protects and grows that investment or quietly diminishes it.</p>
+        <p>We are deliberately small. We don't take every property that comes to us. We are selective because we have to be able to deliver on every promise we make — to every owner in our portfolio. You're not getting a number. You're getting a partner.</p>
+        <p>When we take on a property, we invest in it before the first guest arrives: professional photography, smart lock installation, listing optimization across Airbnb, VRBO, and direct booking, and a thorough property preparation to our standard. We don't start the clock on your revenue until we've done the work to earn it.</p>
+
+        <ul class="owner-checks">
+          <li>AI-powered dynamic pricing updated daily — not a flat rate set in January</li>
+          <li>Professional photography and copywriting included at onboarding</li>
+          <li>Smart lock installation — 100% keyless entry, every property</li>
+          <li>Multi-platform distribution: Airbnb, VRBO, direct booking site</li>
+          <li>Fully stocked homes — linens, kitchen essentials, beach gear, local guides</li>
+          <li>Post-stay inspection reports with photos after every single turnover</li>
+          <li>Real-time owner portal — your revenue, bookings, and reviews, always visible</li>
+          <li>Transparent monthly statements with no hidden fees or surprise charges</li>
+          <li>A management fee meaningfully below what the island incumbents charge</li>
+          <li>Direct access to the people running your property — not a call center</li>
+        </ul>
+
+        <div style="display:flex;gap:14px;flex-wrap:wrap;margin-top:8px">
+          <a href="#form" class="btn btn-gold btn-lg">Get a Free Revenue Estimate</a>
+          <a href="#process" class="btn btn-outline">See How It Works</a>
+        </div>
+      </div>
+
+      <div class="owner-img-wrap">
+        <img class="owner-img"
+          src="https://images.unsplash.com/photo-1628214458185-a49d4fc577f3?w=800&auto=format&fit=crop&q=85"
+          alt="Beautiful coastal vacation home on Edisto Island"/>
+        <div class="boutique-box">
+          <h4>"Deliberately Small. Exceptionally Managed."</h4>
+          <p>We limit our portfolio because we need to be able to keep every promise we make. If we take your home, you have our full attention — not a fraction of it. That's not a marketing line. It's how we've earned a 4.9-star average and kept it.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="section-md process" id="process">
+  <div class="container">
+    <div class="process-head">
+      <span class="eyebrow">How It Works</span>
+      <h2 style="color:var(--navy)">From First Call to First Booking</h2>
+      <p style="margin-top:12px;max-width:500px;margin-left:auto;margin-right:auto">Getting started is straightforward. Here's what the process looks like from your first conversation to your first guest check-in.</p>
+    </div>
+    <div class="process-steps">
+      <div class="pstep">
+        <div class="pstep-num">1</div>
+        <h4>Conversation</h4>
+        <p>We learn about your property, your goals, and what you've experienced with management (or self-management) so far. We're direct — if we don't think we're the right fit, we'll say so.</p>
+      </div>
+      <div class="pstep">
+        <div class="pstep-num">2</div>
+        <h4>Revenue Estimate</h4>
+        <p>We run a thorough market analysis and give you an honest revenue projection — what your home can realistically earn under our management, not an inflated number designed to win your signature.</p>
+      </div>
+      <div class="pstep">
+        <div class="pstep-num">3</div>
+        <h4>We Prepare</h4>
+        <p>Professional photography, smart lock installation, listing creation, property stocking, and local team introduction. We handle every detail before your first guest ever arrives.</p>
+      </div>
+      <div class="pstep">
+        <div class="pstep-num">4</div>
+        <h4>You Earn More</h4>
+        <p>Watch your calendar fill with quality bookings, review your monthly statements (which you can actually read), and let our team handle everything in between. That's the deal.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="reviews">
+  <div class="container">
+    <div class="reviews-head">
+      <span class="eyebrow eyebrow-light">What Guests Say</span>
+      <h2>The 4.9-Star Standard in Practice</h2>
+      <p>From our active portfolio across multiple Basecamp Getaways markets — a preview of what Edisto guests can expect.</p>
+    </div>
+    <div class="rev-grid">
+      <div class="rev-card">
+        <div class="stars">★★★★★</div>
+        <p class="rev-text">"We've rented with a lot of management companies over the years. This was in a completely different league. Smart lock, spotless home on arrival, kitchen stocked with the basics we always forget. Every detail was handled. We'll be back before the end of the year."</p>
+        <div class="rev-by">
+          <div class="rev-av">S</div>
+          <div>
+            <div class="rev-name">Sarah M.</div>
+            <div class="rev-meta">Family of 6 · Beach Getaway</div>
+          </div>
+        </div>
+      </div>
+      <div class="rev-card">
+        <div class="stars">★★★★★</div>
+        <p class="rev-text">"The home was even better than the photos — and the photos were exceptional. Keyless entry, premium linens, beach chairs and gear ready to go. We've already recommended it to three other families. This is what a vacation rental should feel like."</p>
+        <div class="rev-by">
+          <div class="rev-av">T</div>
+          <div>
+            <div class="rev-name">Tyler &amp; Amanda R.</div>
+            <div class="rev-meta">Couples Anniversary Trip</div>
+          </div>
+        </div>
+      </div>
+      <div class="rev-card">
+        <div class="stars">★★★★★</div>
+        <p class="rev-text">"Someone actually thought about what you need on a beach trip. Beach chairs, a cooler, games for the kids, a kitchen with the basics. The house was immaculate. We felt like guests — not afterthoughts. Will absolutely book again next year."</p>
+        <div class="rev-by">
+          <div class="rev-av">J</div>
+          <div>
+            <div class="rev-name">Jennifer K.</div>
+            <div class="rev-meta">Girls' Trip · 5 nights</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FORM -->
+<section class="section form-section" id="form">
+  <div class="container">
+    <div class="form-wrap">
+      <div class="form-copy">
+        <span class="eyebrow">Partner With Basecamp</span>
+        <h2 style="color:var(--navy)">Ready to See What Your Property Is Actually Worth?</h2>
+        <p>We're selectively partnering with Edisto Island property owners who want a modern management experience — not the same old story.</p>
+        <p>Fill out the form and we'll respond within 24 hours with a free, honest revenue estimate and a direct conversation about whether we're the right fit. No pressure, no sales pitch.</p>
+
+        <div class="pain-list">
+          <div class="pain"><strong>Still paying 25–35%?</strong> There's a better number available — and it comes with better service, not less.</div>
+          <div class="pain"><strong>Guests still picking up keys at an office?</strong> Smart locks take one afternoon to install. There's no excuse for this in 2026.</div>
+          <div class="pain"><strong>Static pricing costing you revenue?</strong> Daily AI-driven pricing can meaningfully change what you earn per available night.</div>
+          <div class="pain"><strong>Wondering if anyone's actually checking on your home?</strong> We send photo inspection reports after every single turnover.</div>
+        </div>
+
+        <div style="margin-top:28px;padding:20px 22px;background:var(--navy);border-radius:8px">
+          <p style="color:rgba(255,255,255,.75);font-size:.88rem;margin:0">We manage a small, select portfolio across multiple markets — each one managed to the same 4.9-star standard. If you're serious about your property, we want to talk. <strong style="color:var(--gold)">We respond within 24 hours, always.</strong></p>
+        </div>
+
+        <div style="margin-top:24px;padding:22px 24px;background:var(--sand);border-radius:8px;border:1.5px solid rgba(41,122,137,.2)">
+          <p style="font-size:.9rem;color:var(--navy);font-weight:600;margin-bottom:6px">Prefer to talk first?</p>
+          <p style="font-size:.88rem;color:var(--mid);margin-bottom:16px">Skip the form and book a 20-minute call directly on our calendar. No prep needed — just a conversation.</p>
+          <a href="https://link.basecampgetaways.com/widget/booking/ux0V6sy1tHczRlxZIU3o"
+             target="_blank" rel="noopener"
+             class="btn btn-teal"
+             style="width:100%;justify-content:center;text-align:center">
+            📅 Schedule a Free Call →
+          </a>
+        </div>
+      </div>
+
+      <div class="form-box" style="padding:0;overflow:hidden;background:#fff">
+        <iframe
+          src="https://link.basecampgetaways.com/widget/form/qVfRSODy12KKV9R82IZs"
+          style="width:100%;height:892px;border:none;border-radius:8px;display:block"
+          id="inline-qVfRSODy12KKV9R82IZs"
+          data-layout="{'id':'INLINE'}"
+          data-trigger-type="alwaysShow"
+          data-trigger-value=""
+          data-activation-type="alwaysActivated"
+          data-activation-value=""
+          data-deactivation-type="neverDeactivate"
+          data-deactivation-value=""
+          data-form-name="Basecamp Getaways Management"
+          data-height="892"
+          data-layout-iframe-id="inline-qVfRSODy12KKV9R82IZs"
+          data-form-id="qVfRSODy12KKV9R82IZs"
+          title="Basecamp Getaways Management">
+        </iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="ft-top">
+    <div class="container">
+      <div class="ft-grid">
+        <div class="ft-brand">
+          <span class="wm">Edisto Stays</span>
+          <span class="ws">by Basecamp Getaways</span>
+          <p>South Carolina's Lowcountry vacation rentals managed differently — boutique service, modern tools, local team, transparent fees. Built for owners who expect more.</p>
+          <div class="ft-social">
+            <a href="#" class="ft-si" aria-label="Instagram">📷</a>
+            <a href="#" class="ft-si" aria-label="Facebook">f</a>
+            <a href="#" class="ft-si" aria-label="YouTube">▶</a>
+          </div>
+        </div>
+        <div class="ft-col">
+          <h5>Edisto Island</h5>
+          <ul>
+            <li><a href="#about">About Edisto</a></li>
+            <li><a href="#guide">Island Guide</a></li>
+            <li><a href="#dining">Dining &amp; Seafood</a></li>
+            <li><a href="#fishing">Fishing &amp; Charters</a></li>
+            <li><a href="#watersports">Water Sports</a></li>
+            <li><a href="#nature">Nature &amp; Wildlife</a></li>
+            <li><a href="https://edistochamber.com" target="_blank" rel="noopener">Edisto Chamber</a></li>
+            <li><a href="https://edistoisland.com" target="_blank" rel="noopener">EdistoIsland.com</a></li>
+          </ul>
+        </div>
+        <div class="ft-col">
+          <h5>For Owners</h5>
+          <ul>
+            <li><a href="#problem">The Management Problem</a></li>
+            <li><a href="#why">Why Edisto Stays</a></li>
+            <li><a href="#team">Our Local Team</a></li>
+            <li><a href="#process">How It Works</a></li>
+            <li><a href="#form">Free Revenue Estimate</a></li>
+            <li><a href="https://basecampgetaways.com" target="_blank" rel="noopener">Basecamp Getaways</a></li>
+          </ul>
+        </div>
+        <div class="ft-col">
+          <h5>Quick Links</h5>
+          <ul>
+            <li><a href="https://southcarolinaparks.com/edisto-beach" target="_blank" rel="noopener">Edisto Beach State Park</a></li>
+            <li><a href="https://edistochamber.com/botany-bay/" target="_blank" rel="noopener">Botany Bay Info</a></li>
+            <li><a href="https://edistobeachseaturtles.com" target="_blank" rel="noopener">Sea Turtle Project</a></li>
+            <li><a href="https://www.fws.gov/refuge/ernest-f-hollings-ace-basin" target="_blank" rel="noopener">ACE Basin NWR</a></li>
+            <li><a href="https://flowersseafood.com" target="_blank" rel="noopener">Flowers Seafood</a></li>
+            <li><a href="https://edistowatersports.net" target="_blank" rel="noopener">Edisto Watersports</a></li>
+            <li><a href="mailto:joseph@basecampgetaways.com">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="ft-bot">
+      <p>© 2026 Edisto Stays · Operated by Basecamp Getaways · All rights reserved</p>
+      <div style="display:flex;gap:22px">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Nav scroll
+  const nav = document.getElementById('nav');
+  window.addEventListener('scroll', () => nav.classList.toggle('scrolled', scrollY > 50));
+  nav.classList.add('scrolled');
+
+  // Hero slider
+  const slides = document.querySelectorAll('.slide');
+  const dotsEl = document.getElementById('heroDots');
+  let cur = 0;
+  slides.forEach((_, i) => {
+    const d = document.createElement('button');
+    d.className = 'dot' + (i === 0 ? ' on' : '');
+    d.setAttribute('aria-label', 'Slide ' + (i + 1));
+    d.onclick = () => goSlide(i);
+    dotsEl.appendChild(d);
+  });
+  function goSlide(n) {
+    slides[cur].classList.remove('on');
+    document.querySelectorAll('.dot')[cur].classList.remove('on');
+    cur = n;
+    slides[cur].classList.add('on');
+    document.querySelectorAll('.dot')[cur].classList.add('on');
+  }
+  setInterval(() => goSlide((cur + 1) % slides.length), 5500);
+
+  // Mobile nav
+  function openMob() { document.getElementById('mNav').classList.add('open'); }
+  function closeMob() { document.getElementById('mNav').classList.remove('open'); }
+
+  // Smooth scroll for all anchors
+  document.querySelectorAll('a[href^="#"]').forEach(a => {
+    a.addEventListener('click', e => {
+      const t = document.querySelector(a.getAttribute('href'));
+      if (t) { e.preventDefault(); t.scrollIntoView({ behavior: 'smooth' }); }
+    });
+  });
+
+  // Island guide tabs
+  function showTab(name, btn) {
+    document.querySelectorAll('.gpanel').forEach(p => p.classList.remove('active'));
+    document.querySelectorAll('.gtab').forEach(b => b.classList.remove('active'));
+    document.getElementById('tab-' + name).classList.add('active');
+    btn.classList.add('active');
+    document.getElementById('guide').scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+
+  // Scroll-fade-in
+  const obs = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (e.isIntersecting) { e.target.style.opacity = '1'; e.target.style.transform = 'translateY(0)'; obs.unobserve(e.target); }
+    });
+  }, { threshold: 0.08 });
+  document.querySelectorAll('.why-card, .rest-card, .act-card, .nat-card, .rev-card, .pstep, .roster-item').forEach((el, i) => {
+    el.style.opacity = '0';
+    el.style.transform = 'translateY(18px)';
+    el.style.transition = `opacity .5s ease ${(i % 4) * 0.1}s, transform .5s ease ${(i % 4) * 0.1}s`;
+    obs.observe(el);
+  });
+
+</script>
+<script src="https://link.basecampgetaways.com/js/form_embed.js"></script>
+</body>
+</html>
