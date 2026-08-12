@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Edisto Island Vacation Rental Management | Edisto Stays by Basecamp Getaways</title>
+  <meta name="description" content="Edisto Island property owners: stop overpaying for outdated management. Edisto Stays offers AI dynamic pricing, 100% keyless entry, a direct booking engine, and a growing database of past guests we market directly. Get a free revenue estimate."/>
+  <meta name="robots" content="index, follow"/>
+  <link rel="canonical" href="https://edistostays.com/owners"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+  <style>
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    :root{
+      --navy:#122c37;--teal:#297a89;--teal-lt:#3a9aac;--gold:#c2944a;--gold-lt:#d4aa6a;
+      --cream:#f5f0e8;--sand:#ede8dd;--dark:#1a2b32;--mid:#5a7a85;--light:#8fa8b0;
+      --coral:#cd6348;--sh:0 4px 24px rgba(18,44,55,.13);--sh-lg:0 8px 48px rgba(18,44,55,.18);
+      --r:6px;--ff-head:'Cormorant Garamond',Georgia,serif;--ff-body:'Inter',system-ui,sans-serif;
+    }
+    html{scroll-behavior:smooth}
+    body{font-family:var(--ff-body);color:var(--dark);line-height:1.65;font-size:16px;background:#fff}
+    h1,h2,h3,h4{font-family:var(--ff-head);line-height:1.2;font-weight:600}
+    h1{font-size:clamp(2.8rem,5vw,4.4rem);font-weight:300}
+    h2{font-size:clamp(2rem,4vw,3rem);font-weight:400}
+    h3{font-size:1.6rem;font-weight:400}
+    h4{font-size:1.15rem;font-weight:600;font-family:var(--ff-body)}
+    p{color:#3a5560;line-height:1.7}
+    a{color:var(--teal);text-decoration:none}
+    img{max-width:100%;display:block}
+    .container{max-width:1140px;margin:0 auto;padding:0 28px}
+    .section{padding:96px 0}
+    .section-md{padding:72px 0}
+    .eyebrow{display:block;font-size:.72rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--teal);margin-bottom:14px}
+    .eyebrow-gold{color:var(--gold)}
+    .eyebrow-light{color:rgba(255,255,255,.5)}
+    .lede{font-size:1.1rem;color:var(--dark);font-weight:400}
+
+    /* ── BUTTONS ── */
+    .btn{display:inline-flex;align-items:center;gap:8px;padding:13px 28px;border-radius:var(--r);font-family:var(--ff-body);font-size:.93rem;font-weight:600;letter-spacing:.03em;cursor:pointer;transition:all .2s;text-decoration:none;border:none}
+    .btn-gold{background:var(--gold);color:#fff}
+    .btn-gold:hover{background:var(--gold-lt);transform:translateY(-1px);box-shadow:var(--sh)}
+    .btn-teal{background:var(--teal);color:#fff}
+    .btn-teal:hover{background:var(--teal-lt);transform:translateY(-1px)}
+    .btn-outline{background:transparent;border:1.5px solid var(--teal);color:var(--teal)}
+    .btn-outline:hover{background:var(--teal);color:#fff}
+    .btn-ghost{background:transparent;border:1.5px solid rgba(255,255,255,.5);color:#fff}
+    .btn-ghost:hover{border-color:#fff;background:rgba(255,255,255,.1)}
+    .btn-lg{padding:16px 36px;font-size:1rem}
+    .btn-sm{padding:9px 18px;font-size:.84rem}
+
+    /* ── NAV ── */
+    nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:0;transition:all .3s;background:transparent}
+    nav.scrolled{background:var(--navy);box-shadow:0 2px 20px rgba(0,0,0,.15)}
+    .nav-inner{display:flex;align-items:center;justify-content:space-between;padding:18px 28px;max-width:1140px;margin:0 auto}
+    .logo{text-decoration:none}
+    .logo-main{font-family:var(--ff-head);font-size:1.5rem;font-weight:600;color:#fff;display:block;line-height:1}
+    .logo-sub{font-size:.6rem;letter-spacing:.15em;text-transform:uppercase;color:rgba(255,255,255,.45);display:block;margin-top:2px}
+    .nav-links{display:flex;align-items:center;gap:32px;list-style:none}
+    .nav-links a{color:rgba(255,255,255,.8);font-size:.9rem;font-weight:500;transition:color .18s}
+    .nav-links a:hover{color:#fff}
+    .nav-cta{background:var(--gold);color:#fff !important;padding:9px 22px;border-radius:var(--r);font-weight:600 !important}
+    .nav-cta:hover{background:var(--gold-lt) !important}
+    .burger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:4px}
+    .burger span{display:block;width:24px;height:2px;background:#fff;border-radius:2px}
+    .mobile-nav{position:fixed;top:0;left:0;right:0;bottom:0;background:var(--navy);z-index:200;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:32px;opacity:0;pointer-events:none;transition:opacity .25s}
+    .mobile-nav.open{opacity:1;pointer-events:all}
+    .mobile-nav a{font-family:var(--ff-head);font-size:2rem;color:#fff}
+    .mobile-close{position:absolute;top:24px;right:28px;font-size:1.5rem;color:rgba(255,255,255,.6);cursor:pointer}
+
+    /* ── HERO ── */
+    .hero{min-height:100vh;display:flex;align-items:center;position:relative;overflow:hidden}
+    .hero-bg{position:absolute;inset:0;background:linear-gradient(135deg,var(--navy) 0%,#1a4a5c 100%)}
+    .hero-bg::after{content:'';position:absolute;inset:0;background:url('https://images.unsplash.com/photo-1467767079704-1e5389c42c9e?w=1920&auto=format&fit=crop&q=85') center/cover no-repeat;opacity:.22}
+    .hero-body{position:relative;z-index:2;max-width:1140px;margin:0 auto;padding:0 28px;padding-top:120px;padding-bottom:80px}
+    .hero-tag{display:inline-block;background:rgba(194,148,74,.2);color:var(--gold-lt);font-size:.72rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;padding:6px 16px;border-radius:3px;margin-bottom:28px;border:1px solid rgba(194,148,74,.3)}
+    .hero h1{color:#fff;max-width:780px;margin-bottom:20px}
+    .hero h1 em{color:var(--gold-lt);font-style:normal}
+    .hero-lead{font-size:1.15rem;color:rgba(255,255,255,.72);max-width:600px;margin-bottom:36px;line-height:1.75}
+    .hero-actions{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:56px}
+    .hero-proof{display:flex;gap:36px;flex-wrap:wrap}
+    .proof-stat{text-align:left}
+    .proof-num{font-family:var(--ff-head);font-size:2.4rem;font-weight:300;color:#fff;display:block;line-height:1}
+    .proof-num em{color:var(--gold-lt);font-style:normal}
+    .proof-lbl{font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.45);margin-top:4px;display:block}
+    .hero-divider{width:1px;background:rgba(255,255,255,.15);align-self:stretch}
+
+    /* ── PROBLEM BAND ── */
+    .problem{background:var(--navy);padding:96px 0}
+    .problem-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start}
+    .problem-copy h2{color:#fff;margin-bottom:20px}
+    .problem-copy .lede{color:rgba(255,255,255,.75);margin-bottom:18px}
+    .problem-copy p{color:rgba(255,255,255,.65);margin-bottom:14px;font-size:.96rem}
+    blockquote{border-left:3px solid var(--gold);padding:16px 22px;margin:24px 0;background:rgba(255,255,255,.04);border-radius:0 6px 6px 0}
+    blockquote p{color:rgba(255,255,255,.75);font-style:italic;font-size:.97rem;margin:0}
+    .fee-math{background:rgba(41,122,137,.12);border:1px solid rgba(41,122,137,.3);border-radius:8px;padding:24px;margin-top:28px}
+    .fee-math h4{color:#fff;margin-bottom:12px;font-size:1.05rem}
+    .fee-math p{color:rgba(255,255,255,.7);font-size:.9rem;margin-bottom:8px}
+    .fee-math p:last-child{margin:0}
+    .fee-math strong{color:var(--gold)}
+    .comp-table{overflow-x:auto}
+    table{width:100%;border-collapse:collapse;font-size:.88rem}
+    th{background:rgba(255,255,255,.06);color:rgba(255,255,255,.5);font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;padding:12px 14px;text-align:left;font-weight:600}
+    td{padding:14px;border-bottom:1px solid rgba(255,255,255,.06);color:rgba(255,255,255,.78);vertical-align:middle}
+    tr.us td{background:rgba(41,122,137,.15);color:#fff;font-weight:500}
+    tr.us td:first-child{border-left:2px solid var(--teal)}
+    .tag-bad{display:inline-block;background:rgba(205,99,72,.2);color:#e8a090;font-size:.72rem;font-weight:600;padding:2px 8px;border-radius:3px}
+    .tag-ok{display:inline-block;background:rgba(194,148,74,.15);color:var(--gold-lt);font-size:.72rem;font-weight:600;padding:2px 8px;border-radius:3px}
+    .tag-good{display:inline-block;background:rgba(41,122,137,.25);color:#6fcfe0;font-size:.72rem;font-weight:600;padding:2px 8px;border-radius:3px}
+
+    /* ── FEATURES (NEW SECTIONS) ── */
+    .feature{padding:96px 0}
+    .feature-alt{background:var(--sand)}
+    .feature-dark{background:var(--navy);padding:96px 0}
+    .feature-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
+    .feature-img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:8px;box-shadow:var(--sh-lg)}
+    .feature-graphic{width:100%;border-radius:8px;overflow:hidden;box-shadow:var(--sh-lg)}
+    .feature-copy h2{margin-bottom:16px}
+    .feature-copy .lede{margin-bottom:18px}
+    .feature-copy p{margin-bottom:14px;font-size:.96rem}
+    .feature-list{list-style:none;display:flex;flex-direction:column;gap:12px;margin:24px 0}
+    .feature-list li{display:flex;align-items:flex-start;gap:12px;font-size:.95rem;color:var(--dark)}
+    .feature-list li::before{content:'✓';width:22px;height:22px;border-radius:50%;background:var(--teal);color:#fff;display:flex;align-items:center;justify-content:center;font-size:.72rem;font-weight:700;flex-shrink:0;margin-top:2px}
+    .feature-list-dark li{color:rgba(255,255,255,.78)}
+    .feature-list-dark li::before{background:var(--gold)}
+    .feature-copy-dark h2{color:#fff;margin-bottom:16px}
+    .feature-copy-dark .lede{color:rgba(255,255,255,.78)}
+    .feature-copy-dark p{color:rgba(255,255,255,.65);margin-bottom:14px;font-size:.96rem}
+
+    /* ── ENGINE GRAPHIC ── */
+    .engine-card{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:10px;padding:28px;margin-bottom:18px}
+    .engine-card h4{color:var(--gold);font-family:var(--ff-head);font-size:1.3rem;margin-bottom:8px}
+    .engine-card p{color:rgba(255,255,255,.65);font-size:.9rem;margin:0}
+    .engine-flow{display:flex;flex-direction:column;gap:0}
+    .engine-step{display:flex;gap:18px;align-items:flex-start;padding:20px 0;border-bottom:1px solid rgba(255,255,255,.08)}
+    .engine-step:last-child{border-bottom:none}
+    .engine-num{width:40px;height:40px;border-radius:50%;background:var(--teal);color:#fff;display:flex;align-items:center;justify-content:center;font-family:var(--ff-head);font-size:1.3rem;font-weight:300;flex-shrink:0}
+    .engine-step h4{color:#fff;margin-bottom:4px;font-size:.97rem}
+    .engine-step p{color:rgba(255,255,255,.55);font-size:.86rem;margin:0}
+
+    /* ── SEO GRAPHIC ── */
+    .seo-metrics{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+    .seo-metric{background:var(--cream);border-radius:8px;padding:22px;border-top:3px solid var(--teal)}
+    .seo-metric .big{font-family:var(--ff-head);font-size:2.2rem;color:var(--teal);font-weight:300;display:block;line-height:1}
+    .seo-metric .lbl{font-size:.76rem;letter-spacing:.1em;text-transform:uppercase;color:var(--mid);margin-top:6px;display:block}
+    .seo-metric p{font-size:.85rem;color:var(--mid);margin-top:8px}
+    .keyword-chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}
+    .kchip{background:rgba(41,122,137,.1);color:var(--teal);font-size:.78rem;font-weight:600;padding:5px 12px;border-radius:20px;border:1px solid rgba(41,122,137,.2)}
+
+    /* ── DATABASE GRAPHIC ── */
+    .db-visual{background:var(--navy);border-radius:10px;padding:32px;overflow:hidden}
+    .db-row{display:flex;align-items:center;justify-content:space-between;padding:12px 0;border-bottom:1px solid rgba(255,255,255,.07)}
+    .db-row:last-child{border-bottom:none}
+    .db-label{font-size:.82rem;color:rgba(255,255,255,.55)}
+    .db-value{font-size:.9rem;font-weight:600;color:#fff}
+    .db-badge{background:rgba(41,122,137,.2);color:#6fcfe0;font-size:.7rem;font-weight:700;padding:3px 8px;border-radius:3px}
+    .db-badge-gold{background:rgba(194,148,74,.2);color:var(--gold-lt)}
+    .db-growth{color:var(--gold-lt);font-size:.78rem;font-weight:600}
+
+    /* ── WHY GRID ── */
+    .why{background:var(--cream)}
+    .why-head{text-align:center;margin-bottom:56px}
+    .why-head h2{color:var(--navy)}
+    .why-head p{max-width:560px;margin:14px auto 0}
+    .why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+    .why-card{background:#fff;border-radius:8px;padding:32px 26px;border-top:3px solid transparent;box-shadow:0 2px 18px rgba(18,44,55,.07);transition:all .24s}
+    .why-card:hover{border-top-color:var(--teal);transform:translateY(-3px);box-shadow:var(--sh)}
+    .why-num{font-family:var(--ff-head);font-size:2.6rem;font-weight:700;color:rgba(41,122,137,.12);line-height:1;margin-bottom:14px}
+    .why-card h4{color:var(--navy);margin-bottom:10px}
+    .why-card p{font-size:.91rem}
+
+    /* ── PROCESS ── */
+    .process{background:var(--sand)}
+    .process-head{text-align:center;margin-bottom:56px}
+    .process-steps{display:grid;grid-template-columns:repeat(4,1fr);gap:0;position:relative}
+    .process-steps::before{content:'';position:absolute;top:34px;left:12%;right:12%;height:1px;background:var(--teal);opacity:.2;z-index:0}
+    .pstep{text-align:center;padding:0 14px;position:relative;z-index:1}
+    .pstep-num{width:68px;height:68px;border-radius:50%;background:var(--teal);color:#fff;display:flex;align-items:center;justify-content:center;font-family:var(--ff-head);font-size:1.7rem;font-weight:300;margin:0 auto 20px}
+    .pstep h4{color:var(--navy);margin-bottom:8px}
+    .pstep p{font-size:.87rem}
+
+    /* ── REVIEWS ── */
+    .reviews{background:var(--navy);padding:80px 0}
+    .reviews-head{text-align:center;margin-bottom:48px}
+    .reviews-head h2{color:#fff}
+    .reviews-head p{color:rgba(255,255,255,.55);margin-top:10px}
+    .rev-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+    .rev-card{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:8px;padding:28px;transition:background .2s}
+    .rev-card:hover{background:rgba(255,255,255,.09)}
+    .stars{color:var(--gold);letter-spacing:2px;margin-bottom:14px;font-size:1rem}
+    .rev-text{font-style:italic;color:rgba(255,255,255,.8);font-size:.93rem;margin-bottom:20px;line-height:1.75}
+    .rev-by{display:flex;align-items:center;gap:12px}
+    .rev-av{width:40px;height:40px;border-radius:50%;background:linear-gradient(135deg,var(--teal),var(--navy));display:flex;align-items:center;justify-content:center;font-family:var(--ff-head);font-size:1rem;color:#fff;flex-shrink:0}
+    .rev-name{font-weight:600;color:#fff;font-size:.88rem}
+    .rev-meta{font-size:.74rem;color:rgba(255,255,255,.45)}
+
+    /* ── STATS ── */
+    .stats-band{background:linear-gradient(135deg,var(--teal) 0%,var(--navy) 100%);padding:72px 0}
+    .stats-row{display:grid;grid-template-columns:repeat(4,1fr);gap:36px;text-align:center}
+    .stat-big{font-family:var(--ff-head);font-size:clamp(2.8rem,5vw,4.6rem);font-weight:300;color:#fff;display:block;line-height:1}
+    .stat-big em{font-style:normal;color:var(--gold)}
+    .stat-lbl{font-size:.72rem;letter-spacing:.13em;text-transform:uppercase;color:rgba(255,255,255,.5);margin-top:8px}
+
+    /* ── FORM ── */
+    .form-section{background:var(--cream);padding:96px 0}
+    .form-wrap{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start}
+    .form-copy h2{color:var(--navy);margin-bottom:16px}
+    .form-copy p{margin-bottom:14px;font-size:.96rem}
+    .pain-list{margin:24px 0;display:flex;flex-direction:column;gap:10px}
+    .pain{background:rgba(205,99,72,.07);border-left:3px solid var(--coral);padding:12px 16px;border-radius:0 4px 4px 0;font-size:.9rem;color:var(--dark)}
+    .pain strong{color:var(--coral)}
+    .form-box{background:#fff;border-radius:10px;box-shadow:var(--sh-lg);overflow:hidden}
+    .cta-banner{background:var(--navy);padding:56px;text-align:center;border-radius:10px;margin-top:32px}
+    .cta-banner h3{color:#fff;margin-bottom:10px}
+    .cta-banner p{color:rgba(255,255,255,.65);font-size:.95rem;margin-bottom:24px}
+
+    /* ── FOOTER ── */
+    footer{background:var(--dark);color:rgba(255,255,255,.65)}
+    .ft-top{padding:56px 0 36px}
+    .ft-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:44px}
+    .ft-brand .wm{font-family:var(--ff-head);font-size:1.6rem;color:#fff}
+    .ft-brand .ws{font-size:.6rem;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.38);display:block;margin-top:2px}
+    .ft-brand p{margin-top:12px;font-size:.86rem;line-height:1.65}
+    .ft-col h5{color:#fff;font-size:.74rem;font-weight:700;letter-spacing:.13em;text-transform:uppercase;margin-bottom:14px}
+    .ft-col ul{list-style:none;display:flex;flex-direction:column;gap:8px}
+    .ft-col li{font-size:.85rem}
+    .ft-col a{color:rgba(255,255,255,.55);transition:color .18s}
+    .ft-col a:hover{color:#fff}
+    .ft-bot{border-top:1px solid rgba(255,255,255,.09);padding:20px 0;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px}
+    .ft-bot p{font-size:.78rem;margin:0}
+    .ft-bot a{color:rgba(255,255,255,.4)}
+    .ft-bot a:hover{color:#fff}
+    .site-link{display:inline-flex;align-items:center;gap:8px;background:rgba(41,122,137,.15);border:1px solid rgba(41,122,137,.3);padding:8px 16px;border-radius:4px;color:var(--teal-lt);font-size:.84rem;font-weight:600;margin-top:14px;transition:all .2s}
+    .site-link:hover{background:rgba(41,122,137,.25);color:#fff}
+
+    /* ── RESPONSIVE ── */
+    @media(max-width:1020px){
+      .feature-grid,.problem-grid,.form-wrap{grid-template-columns:1fr;gap:48px}
+      .why-grid{grid-template-columns:1fr 1fr}
+      .stats-row{grid-template-columns:1fr 1fr;gap:28px}
+      .process-steps{grid-template-columns:1fr 1fr;gap:32px}
+      .process-steps::before{display:none}
+      .rev-grid{grid-template-columns:1fr}
+      .ft-grid{grid-template-columns:1fr 1fr;gap:28px}
+      .seo-metrics{grid-template-columns:1fr}
+    }
+    @media(max-width:700px){
+      .section,.feature,.feature-dark,.feature-alt{padding:64px 0}
+      nav .nav-links{display:none}
+      .burger{display:flex}
+      .why-grid{grid-template-columns:1fr}
+      .stats-row{grid-template-columns:1fr 1fr}
+      .process-steps{grid-template-columns:1fr}
+      .ft-grid{grid-template-columns:1fr;gap:24px}
+      h2{font-size:1.9rem}
+      .hero-proof{gap:20px}
+      .hero-divider{display:none}
+    }
+  </style>
+</head>
+<body>
+
+<!-- MOBILE NAV -->
+<div class="mobile-nav" id="mNav">
+  <span class="mobile-close" onclick="closeMob()">✕</span>
+  <a href="#problem" onclick="closeMob()">The Problem</a>
+  <a href="#engine" onclick="closeMob()">Direct Booking</a>
+  <a href="#seo" onclick="closeMob()">SEO Site</a>
+  <a href="#database" onclick="closeMob()">Past Guests</a>
+  <a href="#form" onclick="closeMob()" style="color:var(--gold)">Get Free Estimate</a>
+</div>
+
+<!-- NAV -->
+<nav id="nav">
+  <div class="nav-inner">
+    <a href="https://edistostays.com" class="logo">
+      <span class="logo-main">Edisto Stays</span>
+      <span class="logo-sub">by Basecamp Getaways</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#problem">The Problem</a></li>
+      <li><a href="#engine">Direct Booking</a></li>
+      <li><a href="#seo">SEO Traffic</a></li>
+      <li><a href="#database">Guest Database</a></li>
+      <li><a href="https://edistostays.com">Guest Site →</a></li>
+      <li><a href="#form" class="nav-cta">Free Estimate</a></li>
+    </ul>
+    <div class="burger" onclick="openMob()"><span></span><span></span><span></span></div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-body">
+    <span class="hero-tag">For Edisto Island Property Owners</span>
+    <h1>Your Edisto Property<br/>Deserves Better Than <em>This.</em></h1>
+    <p class="hero-lead">Most Edisto management companies have been operating the same way since the 1970s. We built Edisto Stays to fix that — with AI-powered pricing, a direct booking engine, an SEO-ranked guest site, and a growing database of past guests we market directly back to your property.</p>
+    <div class="hero-actions">
+      <a href="#form" class="btn btn-gold btn-lg">Get a Free Revenue Estimate →</a>
+      <a href="#problem" class="btn btn-ghost btn-lg">See What's Broken</a>
+    </div>
+    <div class="hero-proof">
+      <div class="proof-stat">
+        <span class="proof-num">4.9<em>★</em></span>
+        <span class="proof-lbl">Avg Guest Rating</span>
+      </div>
+      <div class="hero-divider"></div>
+      <div class="proof-stat">
+        <span class="proof-num">10<em>K+</em></span>
+        <span class="proof-lbl">Booked Nights</span>
+      </div>
+      <div class="hero-divider"></div>
+      <div class="proof-stat">
+        <span class="proof-num">20<em>+</em></span>
+        <span class="proof-lbl">Yrs RE Experience</span>
+      </div>
+      <div class="hero-divider"></div>
+      <div class="proof-stat">
+        <span class="proof-num">100<em>%</em></span>
+        <span class="proof-lbl">Keyless Entry</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- THE PROBLEM -->
+<section class="problem" id="problem">
+  <div class="container">
+    <div class="problem-grid">
+      <div class="problem-copy">
+        <span class="eyebrow eyebrow-gold">The Management Problem</span>
+        <h2>What Most Edisto Owners Are Quietly Settling For</h2>
+        <p class="lede">Edisto's established management companies have been here a long time — some over 50 years. That longevity has advantages. It also breeds complacency.</p>
+        <p>When your market fills every July regardless of what you do, the pressure to innovate disappears. Pricing gets set in January and left alone. Listing photos from 2016 stay up. Guests still drive to an office to pick up a physical key.</p>
+        <blockquote><p>"When you've been comfortable on an island for 50 years, you don't install smart locks. You don't update pricing daily. Innovation requires urgency — and incumbency removes urgency."</p></blockquote>
+        <p>When national firms absorbed local Edisto names, owners found themselves managed by call centers. Revenue projections that looked great on paper didn't materialize. Fees not visible in the pitch showed up on the statement.</p>
+        <div class="fee-math">
+          <h4>The Fee Math Worth Running</h4>
+          <p>If your property earns <strong>$80,000/year</strong> and your manager takes <strong>30%</strong>, you write a <strong>$24,000 check annually.</strong></p>
+          <p>At Edisto Stays, that same home would keep <strong>$12,000–$16,000 more per year</strong> — before the revenue gains from AI pricing, better photography, and direct booking.</p>
+          <p>We don't publish our exact rate because we price by property. But we are <strong>meaningfully below the 25–35% the major incumbents charge.</strong></p>
+        </div>
+      </div>
+
+      <div>
+        <div class="comp-table">
+          <table>
+            <thead>
+              <tr>
+                <th>Company Type</th>
+                <th>Mgmt Fee</th>
+                <th>Key Pickup</th>
+                <th>Tech</th>
+                <th>Local?</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Legacy Island Realty<br/><small style="color:rgba(255,255,255,.4)">50+ yr incumbents</small></td>
+                <td><span class="tag-bad">25–35%</span></td>
+                <td><span class="tag-bad">Office required</span></td>
+                <td><span class="tag-bad">Minimal</span></td>
+                <td><span class="tag-good">Yes</span></td>
+              </tr>
+              <tr>
+                <td>National Corporations<br/><small style="color:rgba(255,255,255,.4)">Absorbed local brands</small></td>
+                <td><span class="tag-bad">25–35%+</span></td>
+                <td><span class="tag-ok">Varies</span></td>
+                <td><span class="tag-ok">Partial</span></td>
+                <td><span class="tag-bad">No</span></td>
+              </tr>
+              <tr>
+                <td>Remote Low-Fee Ops<br/><small style="color:rgba(255,255,255,.4)">Fully off-island</small></td>
+                <td><span class="tag-good">10–15%</span></td>
+                <td><span class="tag-good">Keyless</span></td>
+                <td><span class="tag-good">Yes</span></td>
+                <td><span class="tag-bad">No team</span></td>
+              </tr>
+              <tr class="us">
+                <td>Edisto Stays<br/><small style="color:rgba(255,255,255,.55)">by Basecamp Getaways</small></td>
+                <td><span class="tag-good">Below market</span></td>
+                <td><span class="tag-good">100% Keyless</span></td>
+                <td><span class="tag-good">Full AI pricing</span></td>
+                <td><span class="tag-good">Local team</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div style="margin-top:24px;padding:22px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:8px">
+          <p style="color:rgba(255,255,255,.65);font-size:.88rem;margin-bottom:14px"><strong style="color:#fff">What nobody in this market offers today:</strong></p>
+          <div style="display:flex;flex-direction:column;gap:9px">
+            <div style="display:flex;gap:10px"><span style="color:var(--gold);flex-shrink:0">✓</span><span style="color:rgba(255,255,255,.7);font-size:.88rem">Local team <em>plus</em> tech-forward operations — not one or the other</span></div>
+            <div style="display:flex;gap:10px"><span style="color:var(--gold);flex-shrink:0">✓</span><span style="color:rgba(255,255,255,.7);font-size:.88rem">A direct booking engine that drives fee-free revenue back to your property</span></div>
+            <div style="display:flex;gap:10px"><span style="color:var(--gold);flex-shrink:0">✓</span><span style="color:rgba(255,255,255,.7);font-size:.88rem">An SEO-ranked site generating organic Edisto travel traffic 24/7</span></div>
+            <div style="display:flex;gap:10px"><span style="color:var(--gold);flex-shrink:0">✓</span><span style="color:rgba(255,255,255,.7);font-size:.88rem">A growing guest database we market to directly — bypassing OTAs entirely</span></div>
+          </div>
+        </div>
+        <div style="margin-top:20px;text-align:center">
+          <a href="#form" class="btn btn-gold btn-lg">Get Your Free Revenue Estimate →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS BAND -->
+<section class="stats-band">
+  <div class="container">
+    <div class="stats-row">
+      <div>
+        <span class="stat-big">10<em>K+</em></span>
+        <div class="stat-lbl">Booked Nights Across Portfolio</div>
+      </div>
+      <div>
+        <span class="stat-big">4.9<em>★</em></span>
+        <div class="stat-lbl">Average Guest Review Score</div>
+      </div>
+      <div>
+        <span class="stat-big">AI<em>+</em></span>
+        <div class="stat-lbl">Daily Dynamic Pricing Engine</div>
+      </div>
+      <div>
+        <span class="stat-big">0<em>%</em></span>
+        <div class="stat-lbl">OTA Fees on Direct Bookings</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DIRECT BOOKING ENGINE -->
+<section class="feature feature-dark" id="engine">
+  <div class="container">
+    <div class="feature-grid">
+      <div class="feature-copy-dark">
+        <span class="eyebrow eyebrow-gold">Direct Booking Engine</span>
+        <h2 style="color:#fff">Every Direct Booking Is a Booking Airbnb Doesn't Take a Cut Of</h2>
+        <p class="lede" style="color:rgba(255,255,255,.78)">Airbnb and VRBO collect 3% from owners on every booking. On an $80K/year property, that's $2,400 gone before your management fee. Our direct booking engine routes those bookings through edistostays.com instead.</p>
+        <p style="color:rgba(255,255,255,.65)">When a past guest rebooks directly, or when a visitor discovers Edisto through our SEO site and books without going through an OTA — you keep every dollar of that platform fee. Over time, those add up to a meaningful second revenue line.</p>
+        <ul class="feature-list feature-list-dark">
+          <li>edistostays.com is your direct booking destination — professionally built, fully branded</li>
+          <li>Guests pay no Airbnb service fee — which means they often prefer booking direct</li>
+          <li>Owner earns 3%+ more on every direct booking vs. OTA equivalent</li>
+          <li>Direct bookings build your review base on your own platform, not just OTAs</li>
+          <li>Integrated with our guest database for repeat-booking campaigns</li>
+        </ul>
+        <a href="https://edistostays.com" target="_blank" rel="noopener" class="site-link">
+          🌐 View the Guest Site — edistostays.com →
+        </a>
+      </div>
+      <div>
+        <div class="engine-card">
+          <h4>How the Direct Booking Engine Works</h4>
+          <p>Every Edisto Stays property is listed on edistostays.com alongside Airbnb and VRBO. As our site builds authority, a growing share of bookings originate direct.</p>
+        </div>
+        <div class="engine-flow">
+          <div class="engine-step">
+            <div class="engine-num">1</div>
+            <div>
+              <h4>Guest Discovers Your Property</h4>
+              <p>Via Airbnb, VRBO, or direct Google search landing on edistostays.com — our SEO content drives organic discovery.</p>
+            </div>
+          </div>
+          <div class="engine-step">
+            <div class="engine-num">2</div>
+            <div>
+              <h4>Guests Incentivized to Book Direct</h4>
+              <p>No Airbnb service fee means guests often save money booking through edistostays.com. We make this visible and easy.</p>
+            </div>
+          </div>
+          <div class="engine-step">
+            <div class="engine-num">3</div>
+            <div>
+              <h4>Booking Processed Fee-Free</h4>
+              <p>No OTA platform fee deducted. Owner earns more. Guest pays less. We earn our management fee — that's the whole deal.</p>
+            </div>
+          </div>
+          <div class="engine-step">
+            <div class="engine-num">4</div>
+            <div>
+              <h4>Guest Enters Our Database</h4>
+              <p>Every direct guest becomes a contactable past guest we can market to for future stays — building a compounding revenue asset.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SEO SITE -->
+<section class="feature" id="seo">
+  <div class="container">
+    <div class="feature-grid">
+      <div>
+        <div class="seo-metrics">
+          <div class="seo-metric">
+            <span class="big">24/7</span>
+            <span class="lbl">Organic Traffic Generation</span>
+            <p>edistostays.com works while you sleep, ranking for Edisto search queries every day.</p>
+          </div>
+          <div class="seo-metric">
+            <span class="big">Free</span>
+            <span class="lbl">Cost Per Discovery</span>
+            <p>Organic SEO traffic costs $0 per visitor — no ad spend required once ranked.</p>
+          </div>
+          <div class="seo-metric">
+            <span class="big">→ $$</span>
+            <span class="lbl">Discovery to Direct Booking</span>
+            <p>Visitors searching for things to do on Edisto convert to guests booking your properties.</p>
+          </div>
+          <div class="seo-metric">
+            <span class="big">Long</span>
+            <span class="lbl">Compounding Value</span>
+            <p>SEO rankings compound over time — the asset gets more valuable every month.</p>
+          </div>
+        </div>
+        <div class="keyword-chips">
+          <span class="kchip">things to do on Edisto Island</span>
+          <span class="kchip">Edisto Island restaurants</span>
+          <span class="kchip">Edisto fishing charters</span>
+          <span class="kchip">Edisto Beach vacation rentals</span>
+          <span class="kchip">Botany Bay Plantation</span>
+          <span class="kchip">Edisto Island guide</span>
+          <span class="kchip">Edisto Island property management</span>
+          <span class="kchip">Edisto vacation rental management</span>
+        </div>
+      </div>
+      <div class="feature-copy">
+        <span class="eyebrow">SEO-Optimized Guest Site</span>
+        <h2 style="color:var(--navy)">We Built a Site That Ranks for Every Edisto Search — and Converts Visitors Into Your Guests</h2>
+        <p class="lede">edistostays.com isn't just a booking site. It's a comprehensive Edisto Island travel guide — dining, fishing, watersports, nature, charters, local tips — designed to rank on Google for every major Edisto search query.</p>
+        <p>When someone types "things to do on Edisto Island" into Google and lands on our site, they read the guide, fall in love with the island, and book one of our properties — without ever going to Airbnb.</p>
+        <p>Most property management companies have a thin booking site. We built the definitive Edisto Island resource, because the best marketing for your property is making Edisto itself irresistible.</p>
+        <ul class="feature-list">
+          <li>Full island guide: dining, fishing, water sports, nature, activities</li>
+          <li>Targeting high-volume Edisto search terms with real, useful content</li>
+          <li>Internal links from travel content directly to property listings</li>
+          <li>Growing blog content for long-tail Edisto travel keywords</li>
+          <li>Schema markup and technical SEO built in from launch</li>
+        </ul>
+        <a href="https://edistostays.com" target="_blank" rel="noopener" class="btn btn-outline" style="margin-top:8px">
+          Explore edistostays.com →
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PAST GUEST DATABASE -->
+<section class="feature feature-alt" id="database">
+  <div class="container">
+    <div class="feature-grid">
+      <div class="feature-copy">
+        <span class="eyebrow">Past Guest Database</span>
+        <h2 style="color:var(--navy)">Every Guest We Host Becomes an Asset That Pays You Again — Without OTA Fees</h2>
+        <p class="lede">Every guest who books through Edisto Stays — whether via Airbnb, VRBO, or direct — enters our owned guest database. We market to them directly for future stays.</p>
+        <p>A repeat guest who rebooks directly bypasses OTAs entirely. No platform fee. No service charge. Just revenue. And repeat guests are easier to convert, more likely to leave 5-star reviews, and more likely to refer friends.</p>
+        <p>Most management companies have no mechanism for this. When a guest checks out of your Airbnb property, Airbnb owns that guest relationship — not you, not your manager. We fix that.</p>
+        <ul class="feature-list">
+          <li>Every guest email captured at or after booking with proper consent</li>
+          <li>Segmented by property, stay dates, and guest profile</li>
+          <li>Email campaigns timed to rebooking windows — before they book somewhere else</li>
+          <li>SMS marketing for high-intent repeat-visit outreach</li>
+          <li>Growing asset: the database gets more valuable every booking, every season</li>
+          <li>Your property benefits from every guest who ever stayed — not just theirs</li>
+        </ul>
+      </div>
+      <div>
+        <div class="db-visual">
+          <div style="margin-bottom:20px">
+            <span style="font-family:var(--ff-head);font-size:1.3rem;color:var(--gold)">Edisto Stays Guest Database</span>
+            <p style="font-size:.8rem;color:rgba(255,255,255,.4);margin-top:4px">Grows with every booking. Markets directly. Zero OTA fees on rebookings.</p>
+          </div>
+          <div class="db-row">
+            <span class="db-label">Total Guest Records</span>
+            <span class="db-value">Growing <span class="db-badge">Every Stay</span></span>
+          </div>
+          <div class="db-row">
+            <span class="db-label">Avg Rebooking Window</span>
+            <span class="db-value">8–12 weeks before season</span>
+          </div>
+          <div class="db-row">
+            <span class="db-label">Direct Rebooking Channel</span>
+            <span class="db-value"><span class="db-badge">Email + SMS</span></span>
+          </div>
+          <div class="db-row">
+            <span class="db-label">OTA Fee on Direct Rebooking</span>
+            <span class="db-value db-growth">$0.00</span>
+          </div>
+          <div class="db-row">
+            <span class="db-label">Owner Revenue on Direct Rebook</span>
+            <span class="db-value db-growth">100% retained (minus mgmt fee)</span>
+          </div>
+          <div class="db-row">
+            <span class="db-label">Database Value Over Time</span>
+            <span class="db-value"><span class="db-badge db-badge-gold">Compounds</span></span>
+          </div>
+        </div>
+        <div style="margin-top:18px;padding:20px 22px;background:#fff;border-radius:8px;border:1px solid rgba(41,122,137,.15)">
+          <p style="font-size:.88rem;color:var(--navy);font-weight:600;margin-bottom:6px">Why this matters to you as an owner:</p>
+          <p style="font-size:.86rem;color:var(--mid);margin:0">Airbnb owns the guest relationship on every Airbnb booking. When that guest wants to come back to Edisto, they go to Airbnb again — and Airbnb collects a fee again. We own the relationship and market directly. Your past guests come back through us, not them.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY EDISTO STAYS -->
+<section class="section why" id="why">
+  <div class="container">
+    <div class="why-head">
+      <span class="eyebrow">Why Edisto Stays</span>
+      <h2>Six Things We Do That Change the Outcome</h2>
+      <p>Owner satisfaction is downstream of guest satisfaction. We start there and build everything else around it.</p>
+    </div>
+    <div class="why-grid">
+      <div class="why-card">
+        <div class="why-num">01</div>
+        <h4>AI Pricing Updated Every Day</h4>
+        <p>Not a flat rate set in January. Not a quarterly review. Our AI pricing engine adjusts daily based on local demand, competitor rates, and booking pace — so you're always at the right price for the moment.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-num">02</div>
+        <h4>Smart Locks. No Office. Ever.</h4>
+        <p>Every Edisto Stays property has smart locks. Guests receive a unique entry code before arrival and go directly to your home. No key office. No waiting. No excuse for doing it any other way in 2026.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-num">03</div>
+        <h4>5-Star Setup That Earns Reviews</h4>
+        <p>Quality linens, fully equipped kitchens, beach gear, games, local guides. The details guests mention in their reviews. Your reviews are your pricing power — we build the foundation that earns them.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-num">04</div>
+        <h4>Cleaning System You Can Count On</h4>
+        <p>Vetted local cleaning teams. Trusted local maintenance. Post-stay photo inspection reports after every single turnover. You don't manage us — we manage the whole thing.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-num">05</div>
+        <h4>Complete Transparency. No Surprises.</h4>
+        <p>We tell you what you'll earn before you sign. Monthly statements you can actually read. A real-time owner portal showing bookings, revenue, and reviews at any moment. No mystery line items.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-num">06</div>
+        <h4>We Think Like Asset Owners</h4>
+        <p>With 20+ years of real estate experience, we approach your property as an investment to protect, maintain, and grow — not a booking unit to maximize at the expense of long-term condition.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="section-md process" id="process">
+  <div class="container">
+    <div class="process-head">
+      <span class="eyebrow">How It Works</span>
+      <h2 style="color:var(--navy)">From First Call to First Booking</h2>
+      <p style="margin-top:12px;max-width:500px;margin-left:auto;margin-right:auto">Getting started is straightforward. Here's what the process looks like from your first conversation to your first guest.</p>
+    </div>
+    <div class="process-steps">
+      <div class="pstep">
+        <div class="pstep-num">1</div>
+        <h4>Conversation</h4>
+        <p>We learn about your property and goals. We're direct — if we're not the right fit, we'll say so rather than promise what we can't deliver.</p>
+      </div>
+      <div class="pstep">
+        <div class="pstep-num">2</div>
+        <h4>Revenue Estimate</h4>
+        <p>A thorough market analysis. An honest projection — not an inflated number designed to win your signature and disappoint you by March.</p>
+      </div>
+      <div class="pstep">
+        <div class="pstep-num">3</div>
+        <h4>We Prepare</h4>
+        <p>Professional photography, smart lock install, listing creation, property stocking, local team introduction. Every detail handled before your first guest arrives.</p>
+      </div>
+      <div class="pstep">
+        <div class="pstep-num">4</div>
+        <h4>You Earn More</h4>
+        <p>Watch your calendar fill, review your monthly statements, and let us handle everything in between. That's the deal.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="reviews">
+  <div class="container">
+    <div class="reviews-head">
+      <span class="eyebrow eyebrow-light">What Guests Say</span>
+      <h2>The 4.9-Star Standard in Practice</h2>
+      <p>From our active portfolio — a preview of what Edisto guests can expect.</p>
+    </div>
+    <div class="rev-grid">
+      <div class="rev-card">
+        <div class="stars">★★★★★</div>
+        <p class="rev-text">"We've rented with a lot of management companies. This was in a completely different league. Smart lock, spotless home, kitchen stocked with basics we always forget. Every detail was handled. We'll be back before the end of the year."</p>
+        <div class="rev-by">
+          <div class="rev-av">S</div>
+          <div>
+            <div class="rev-name">Sarah M.</div>
+            <div class="rev-meta">Family of 6 · Beach Getaway</div>
+          </div>
+        </div>
+      </div>
+      <div class="rev-card">
+        <div class="stars">★★★★★</div>
+        <p class="rev-text">"The home was even better than the photos — and the photos were exceptional. Keyless entry, premium linens, beach chairs ready to go. We've already recommended it to three other families. This is what a vacation rental should feel like."</p>
+        <div class="rev-by">
+          <div class="rev-av">T</div>
+          <div>
+            <div class="rev-name">Tyler &amp; Amanda R.</div>
+            <div class="rev-meta">Couples Anniversary Trip</div>
+          </div>
+        </div>
+      </div>
+      <div class="rev-card">
+        <div class="stars">★★★★★</div>
+        <p class="rev-text">"Someone actually thought about what you need on a beach trip. Beach chairs, a cooler, games for the kids, kitchen basics. The house was immaculate. We felt like guests — not afterthoughts. Booking again next year."</p>
+        <div class="rev-by">
+          <div class="rev-av">J</div>
+          <div>
+            <div class="rev-name">Jennifer K.</div>
+            <div class="rev-meta">Girls' Trip · 5 nights</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FORM -->
+<section class="form-section" id="form">
+  <div class="container">
+    <div class="form-wrap">
+      <div class="form-copy">
+        <span class="eyebrow">Partner With Basecamp</span>
+        <h2 style="color:var(--navy)">Ready to See What Your Property Is Actually Worth?</h2>
+        <p>We're selectively partnering with Edisto Island property owners who want modern management — not the same old story at the same old price.</p>
+        <p>Fill out the form and we'll respond within 24 hours with a free, honest revenue estimate and a direct conversation about whether we're the right fit. No pressure. No pitch.</p>
+
+        <div class="pain-list">
+          <div class="pain"><strong>Still paying 25–35%?</strong> There's a better number available — and it comes with better service, not less.</div>
+          <div class="pain"><strong>Guests still picking up keys at an office?</strong> Smart locks take one afternoon. There's no excuse for this in 2026.</div>
+          <div class="pain"><strong>Your manager has no direct booking engine?</strong> Every booking goes through Airbnb. Every booking costs you 3%. We fix that.</div>
+          <div class="pain"><strong>No one's marketing to your past guests?</strong> Airbnb owns that relationship. We don't let that happen.</div>
+        </div>
+
+        <div style="margin-top:28px;padding:20px 22px;background:var(--navy);border-radius:8px">
+          <p style="color:rgba(255,255,255,.75);font-size:.88rem;margin:0">We manage a small, select portfolio — each one to the same 4.9-star standard. If you're serious about your property, we want to talk. <strong style="color:var(--gold)">We respond within 24 hours, always.</strong></p>
+        </div>
+
+        <div style="margin-top:20px;padding:22px 24px;background:var(--sand);border-radius:8px;border:1.5px solid rgba(41,122,137,.2)">
+          <p style="font-size:.9rem;color:var(--navy);font-weight:600;margin-bottom:6px">Prefer to talk first?</p>
+          <p style="font-size:.88rem;color:var(--mid);margin-bottom:16px">Skip the form and book a 20-minute call on our calendar. No prep needed — just a conversation.</p>
+          <a href="https://link.basecampgetaways.com/widget/booking/ux0V6sy1tHczRlxZIU3o"
+             target="_blank" rel="noopener"
+             class="btn btn-teal"
+             style="width:100%;justify-content:center;text-align:center">
+            📅 Schedule a Free Call →
+          </a>
+        </div>
+
+        <div style="margin-top:24px;text-align:center;padding:16px;background:rgba(41,122,137,.06);border-radius:6px;border:1px solid rgba(41,122,137,.15)">
+          <p style="font-size:.84rem;color:var(--mid);margin-bottom:8px">Looking for a place to stay on Edisto Island?</p>
+          <a href="https://edistostays.com" class="btn btn-outline btn-sm">Browse edistostays.com →</a>
+        </div>
+      </div>
+
+      <div class="form-box">
+        <iframe
+          src="https://link.basecampgetaways.com/widget/form/qVfRSODy12KKV9R82IZs"
+          style="width:100%;height:892px;border:none;display:block"
+          id="inline-owners-form"
+          data-layout="{'id':'INLINE'}"
+          data-trigger-type="alwaysShow"
+          data-trigger-value=""
+          data-activation-type="alwaysActivated"
+          data-activation-value=""
+          data-deactivation-type="neverDeactivate"
+          data-deactivation-value=""
+          data-form-name="Basecamp Getaways Management"
+          data-height="892"
+          data-layout-iframe-id="inline-owners-form"
+          data-form-id="qVfRSODy12KKV9R82IZs"
+          title="Basecamp Getaways Management">
+        </iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="ft-top">
+    <div class="container">
+      <div class="ft-grid">
+        <div class="ft-brand">
+          <span class="wm">Edisto Stays</span>
+          <span class="ws">by Basecamp Getaways</span>
+          <p>Edisto Island vacation rental management — boutique service, AI pricing, direct booking engine, local team. Built for owners who expect more.</p>
+          <a href="https://edistostays.com" class="site-link">🌐 edistostays.com — Guest Booking Site</a>
+        </div>
+        <div class="ft-col">
+          <h5>For Owners</h5>
+          <ul>
+            <li><a href="#problem">The Management Problem</a></li>
+            <li><a href="#engine">Direct Booking Engine</a></li>
+            <li><a href="#seo">SEO Guest Site</a></li>
+            <li><a href="#database">Past Guest Database</a></li>
+            <li><a href="#why">Why Edisto Stays</a></li>
+            <li><a href="#process">How It Works</a></li>
+            <li><a href="#form">Free Revenue Estimate</a></li>
+          </ul>
+        </div>
+        <div class="ft-col">
+          <h5>Quick Links</h5>
+          <ul>
+            <li><a href="https://edistostays.com">Guest Booking Site</a></li>
+            <li><a href="https://basecampgetaways.com" target="_blank" rel="noopener">Basecamp Getaways</a></li>
+            <li><a href="https://edistochamber.com" target="_blank" rel="noopener">Edisto Chamber</a></li>
+            <li><a href="mailto:joseph@basecampgetaways.com">Contact Us</a></li>
+            <li><a href="https://link.basecampgetaways.com/widget/booking/ux0V6sy1tHczRlxZIU3o" target="_blank" rel="noopener">Schedule a Call</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="ft-bot">
+      <p>© 2026 Edisto Stays · Operated by Basecamp Getaways · All rights reserved</p>
+      <div style="display:flex;gap:20px">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Nav scroll
+  const nav = document.getElementById('nav');
+  window.addEventListener('scroll', () => nav.classList.toggle('scrolled', scrollY > 50));
+  nav.classList.add('scrolled');
+
+  // Mobile nav
+  function openMob() { document.getElementById('mNav').classList.add('open'); }
+  function closeMob() { document.getElementById('mNav').classList.remove('open'); }
+
+  // Smooth scroll
+  document.querySelectorAll('a[href^="#"]').forEach(a => {
+    a.addEventListener('click', e => {
+      const t = document.querySelector(a.getAttribute('href'));
+      if (t) { e.preventDefault(); t.scrollIntoView({ behavior: 'smooth' }); }
+    });
+  });
+
+  // Scroll fade-in
+  const obs = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.style.opacity = '1';
+        e.target.style.transform = 'translateY(0)';
+        obs.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.08 });
+  document.querySelectorAll('.why-card, .rev-card, .pstep, .engine-step, .seo-metric').forEach((el, i) => {
+    el.style.opacity = '0';
+    el.style.transform = 'translateY(16px)';
+    el.style.transition = `opacity .5s ease ${(i % 4) * 0.1}s, transform .5s ease ${(i % 4) * 0.1}s`;
+    obs.observe(el);
+  });
+</script>
+<script src="https://link.basecampgetaways.com/js/form_embed.js"></script>
+</body>
+</html>
